@@ -1,12 +1,22 @@
-.navbar-lewagon {
+.navbar-northern-lights {
+  display: flex;
   justify-content: space-between;
-  background: white;
+  background: blue;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+#navbar-cont {
+  position: absolute;
+  width: 1440px;
+  height: 55px;
+  left: 0px;
+  top: 0px;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-link {
+  color: white;
+}
+
+.navbar-item {
+  margin: 0 12%;
+
 }
