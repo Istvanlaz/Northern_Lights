@@ -1,22 +1,39 @@
 .navbar-northern-lights {
   display: flex;
   justify-content: space-between;
-  background: blue;
+  background: #00020c;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 
-#navbar-cont {
-  position: absolute;
-  width: 1440px;
-  height: 55px;
-  left: 0px;
-  top: 0px;
+#navbarSupportedContent {
+  justify-content: center;
+
+}
+
+.navbar-cont {
+  padding: 8px;
 }
 
 .navbar-link {
   color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-nav {
+  width: 68vw;
 }
 
 .navbar-item {
-  margin: 0 12%;
+  margin: 0 auto;
+}
 
+.navbar-item :hover{
+  text-decoration: none;
+  // color: #F4F4F4;
+  color: #e2bf4f;
+  // opacity: 70%;
 }
