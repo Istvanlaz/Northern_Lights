@@ -1,3 +1,105 @@
-.landing {
-  height: 200vh;
+.landing-cont {
+  position: relative;
+  top: 58px;
+  bottom: 90px;
 }
+
+.bg_landing img {
+  height: 95vh;
+  width:100vw;
+}
+
+.bg-img {
+  z-index: 3;
+  position: fixed;
+  background-size: cover;
+}
+
+.title-ban {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.title-ban img {
+  display: block;
+  position: absolute;
+  width: 75vw;
+  height: 30vw;
+  z-index: 5;
+  top: 4vw;
+}
+
+.next-sign {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.next-sign img {
+  display: block;
+  position: absolute;
+  width: 27vw;
+  height: 27vw;
+  z-index: 5;
+  top: 22vw;
+}
+
+.invitation-img {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.invitation-img img {
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 150vh;
+  z-index: 5;
+  top: 100vh;
+}
+
+.footer-land {
+  display: block;
+  position: absolute;
+  left : 0px;
+  top: 250vh;
+  height: 90px;
+  width: 100%;
+  padding: 29px 0px;
+  background-color: #00020c;
+  color: white;
+  text-align: center;
+  font-size: 11px;
+  z-index: 1000;
+}
+
+
+@media(max-width: 992px) {
+  .title-ban img {
+    top: 9vw;
+  }
+
+  .next-sign img {
+    top: 42vw;
+  }
+}
+
+@media(max-width: 768px) {
+    .title-ban img {
+    top: 3vw;
+  }
+
+  .next-sign img {
+    top: 30vw;
+  }
+}
+
+
+
+
+
+
+
+
