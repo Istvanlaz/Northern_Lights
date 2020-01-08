@@ -45,6 +45,16 @@
   top: 22vw;
 }
 
+.invit-cont {
+  font-family: Sathu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 31px;
+
+  color: #FFFFFF;
+}
+
 .invitation-img {
   width: 100vw;
   display: flex;
@@ -58,6 +68,196 @@
   height: 150vh;
   z-index: 5;
   top: 100vh;
+}
+
+.invit-txt-top-left {
+  position: absolute;
+  background: green;
+  width: 33%;
+  height: 126px;
+  left: 0px;
+  top: 100vh;
+  z-index: 1100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.invit-txt-top-right {
+  position: absolute;
+  background: green;
+  width: 33%;
+  height: 126px;
+  right: 0px;
+  top: 100vh;
+  z-index: 1100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.invit-txt-top-centre {
+  position: absolute;
+  background: red;
+  width: 100%;
+  height: 80px;
+  right: 0px;
+  top: 115vh;
+  z-index: 1100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.first-letter {
+  font-size: 114px;
+  margin-bottom: 23px;
+}
+
+.invit-name-left {
+  position: absolute;
+  background: purple;
+  width: 40%;
+  height: 200px;
+  left: 0px;
+  top: 126vh;
+  z-index: 1100;
+
+  font-size: 76px;
+  line-height: 93px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.invit-name-right {
+  position: absolute;
+  background: purple;
+  width: 40%;
+  height: 200px;
+  right: 0px;
+  top: 126vh;
+  z-index: 1100;
+
+  font-size: 76px;
+  line-height: 93px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.invit-logo {
+  position: absolute;
+  background: blue;
+  width: 100%;
+  height: 200px;
+  right: 0px;
+  top: 126vh;
+  z-index: 1005;
+
+  font-size: 40px;
+  line-height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.invit-date {
+  position: absolute;
+  background: red;
+  width: 100%;
+  height: 80px;
+  right: 0px;
+  top: 154vh;
+  z-index: 1100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.invit-bottom-left {
+  position: absolute;
+  background: green;
+  width: 33%;
+  height: 161px;
+  left: 0px;
+  top: 165vh;
+  z-index: 1100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.invit-bottom-centre {
+  position: absolute;
+  background: blue;
+  width: 34%;
+  height: 161px;
+  left: 33%;
+  top: 165vh;
+  padding-bottom: 29px;
+  z-index: 1100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.invit-bottom-right {
+  position: absolute;
+  background: green;
+  width: 33%;
+  height: 161px;
+  right: 0px;
+  top: 165vh;
+  z-index: 1100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.invit-groups {
+  position: absolute;
+  background: red;
+  width: 100%;
+  height: 60px;
+  right: 0px;
+  top: 184vh;
+  z-index: 1100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 12px;
+}
+
+.localisation-text {
+
+}
+
+.localisation-map {
+
 }
 
 .footer-land {
