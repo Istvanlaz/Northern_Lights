@@ -49,7 +49,7 @@
   font-family: Sathu;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1em;
   line-height: 31px;
 
   color: #FFFFFF;
@@ -74,7 +74,7 @@
   position: absolute;
   // background: green;
   width: 33%;
-  height: 16vh;
+  height: 22vh;
   left: 0px;
   top: 100vh;
   z-index: 1100;
@@ -83,13 +83,15 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  font-size: 22px;
 }
 
 .invit-txt-top-right {
   position: absolute;
   // background: green;
   width: 33%;
-  height: 16vh;
+  height: 22vh;
   right: 0px;
   top: 100vh;
   z-index: 1100;
@@ -98,15 +100,17 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  font-size: 22px;
 }
 
 .invit-txt-top-centre {
   position: absolute;
   // background: red;
   width: 100%;
-  height: 11vh;
+  height: 8vh;
   right: 0px;
-  top: 115vh;
+  top: 120vh;
   z-index: 1100;
 
   display: flex;
@@ -116,8 +120,8 @@
 }
 
 .first-letter {
-  font-size: 114px;
-  margin-bottom: 23px;
+  font-size: 1.6em;
+  margin-bottom: 0.2em;
 }
 
 .invit-name-left {
@@ -126,11 +130,10 @@
   width: 40%;
   height: 28vh;
   left: 0px;
-  top: 126vh;
+  top: 128vh;
   z-index: 1100;
 
-  font-size: 76px;
-  line-height: 93px;
+  font-size: 5em;
 
   display: flex;
   align-items: center;
@@ -144,11 +147,10 @@
   width: 40%;
   height: 28vh;
   right: 0px;
-  top: 126vh;
+  top: 128vh;
   z-index: 1100;
 
-  font-size: 76px;
-  line-height: 93px;
+  font-size: 5em;
 
   display: flex;
   align-items: center;
@@ -156,30 +158,13 @@
   text-align: center;
 }
 
-// .invit-logo {
-//   position: absolute;
-//  background: blue;
-//   width: 100%;
-//   height: 28vh;
-//   right: 0px;
-//   top: 126vh;
-//   z-index: 1005;
-
-//   font-size: 40px;
-//   line-height: 70px;
-
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   text-align: center;
-// }
 .invit-logo {
   position: absolute;
   // background: blue;
   height: 28vh;
   width: 20%;
   left: 40%;
-  top: 126vh;
+  top: 128vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,8 +172,8 @@
 }
 
 .invit-logo img {
-  width: 14vw;
-  height: 14vw;
+  width: 9em;
+  height: 9em;
 }
 
 .invit-date {
@@ -197,7 +182,7 @@
   width: 100%;
   height: 11vh;
   right: 0px;
-  top: 154vh;
+  top: 157vh;
   z-index: 1100;
 
   display: flex;
@@ -210,9 +195,9 @@
   position: absolute;
   // background: green;
   width: 33%;
-  height: 20vh;
+  height: 24vh;
   left: 0px;
-  top: 165vh;
+  top: 167vh;
   z-index: 1100;
 
   display: flex;
@@ -225,10 +210,10 @@
   position: absolute;
   // background: blue;
   width: 34%;
-  height: 20vh;
+  height: 24vh;
   left: 33%;
-  top: 165vh;
-  padding-bottom: 29px;
+  top: 167vh;
+  padding-bottom: 1.87em;
   z-index: 1100;
 
   display: flex;
@@ -241,9 +226,9 @@
   position: absolute;
   // background: green;
   width: 33%;
-  height: 20vh;
+  height: 24vh;
   right: 0px;
-  top: 165vh;
+  top: 167vh;
   z-index: 1100;
 
   display: flex;
@@ -258,7 +243,7 @@
   width: 100%;
   height: 8vh;
   right: 0px;
-  top: 184vh;
+  top: 188vh;
   z-index: 1100;
 
   display: flex;
@@ -266,7 +251,7 @@
   justify-content: center;
   text-align: center;
 
-  font-size: 12px;
+  font-size: 0.7em;
 }
 
 .localisation-text {
@@ -334,7 +319,7 @@
   background-color: #00020c;
   color: white;
   text-align: center;
-  font-size: 11px;
+  font-size: 0.7em;
   z-index: 1000;
 }
 
