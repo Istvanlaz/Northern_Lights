@@ -72,9 +72,9 @@
 
 .invit-txt-top-left {
   position: absolute;
-  background: green;
+  // background: green;
   width: 33%;
-  height: 126px;
+  height: 16vh;
   left: 0px;
   top: 100vh;
   z-index: 1100;
@@ -87,9 +87,9 @@
 
 .invit-txt-top-right {
   position: absolute;
-  background: green;
+  // background: green;
   width: 33%;
-  height: 126px;
+  height: 16vh;
   right: 0px;
   top: 100vh;
   z-index: 1100;
@@ -102,9 +102,9 @@
 
 .invit-txt-top-centre {
   position: absolute;
-  background: red;
+  // background: red;
   width: 100%;
-  height: 80px;
+  height: 11vh;
   right: 0px;
   top: 115vh;
   z-index: 1100;
@@ -122,9 +122,9 @@
 
 .invit-name-left {
   position: absolute;
-  background: purple;
+  // background: purple;
   width: 40%;
-  height: 200px;
+  height: 28vh;
   left: 0px;
   top: 126vh;
   z-index: 1100;
@@ -140,9 +140,9 @@
 
 .invit-name-right {
   position: absolute;
-  background: purple;
+  // background: purple;
   width: 40%;
-  height: 200px;
+  height: 28vh;
   right: 0px;
   top: 126vh;
   z-index: 1100;
@@ -156,29 +156,46 @@
   text-align: center;
 }
 
+// .invit-logo {
+//   position: absolute;
+//  background: blue;
+//   width: 100%;
+//   height: 28vh;
+//   right: 0px;
+//   top: 126vh;
+//   z-index: 1005;
+
+//   font-size: 40px;
+//   line-height: 70px;
+
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   text-align: center;
+// }
 .invit-logo {
   position: absolute;
-  background: blue;
-  width: 100%;
-  height: 200px;
-  right: 0px;
+  // background: blue;
+  height: 28vh;
+  width: 20%;
+  left: 40%;
   top: 126vh;
-  z-index: 1005;
-
-  font-size: 40px;
-  line-height: 70px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  z-index: 1200;
+}
+
+.invit-logo img {
+  width: 14vw;
+  height: 14vw;
 }
 
 .invit-date {
   position: absolute;
-  background: red;
+  // background: red;
   width: 100%;
-  height: 80px;
+  height: 11vh;
   right: 0px;
   top: 154vh;
   z-index: 1100;
@@ -191,9 +208,9 @@
 
 .invit-bottom-left {
   position: absolute;
-  background: green;
+  // background: green;
   width: 33%;
-  height: 161px;
+  height: 20vh;
   left: 0px;
   top: 165vh;
   z-index: 1100;
@@ -206,9 +223,9 @@
 
 .invit-bottom-centre {
   position: absolute;
-  background: blue;
+  // background: blue;
   width: 34%;
-  height: 161px;
+  height: 20vh;
   left: 33%;
   top: 165vh;
   padding-bottom: 29px;
@@ -222,9 +239,9 @@
 
 .invit-bottom-right {
   position: absolute;
-  background: green;
+  // background: green;
   width: 33%;
-  height: 161px;
+  height: 20vh;
   right: 0px;
   top: 165vh;
   z-index: 1100;
@@ -237,9 +254,9 @@
 
 .invit-groups {
   position: absolute;
-  background: red;
+  // background: red;
   width: 100%;
-  height: 60px;
+  height: 8vh;
   right: 0px;
   top: 184vh;
   z-index: 1100;
@@ -253,11 +270,57 @@
 }
 
 .localisation-text {
+  position: absolute;
+  // background: gray;
+  width: 50%;
+  height: 46vh;
+  left: 0px;
+  top: 192vh;
+  z-index: 1100;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .localisation-map {
+  position: absolute;
+  // background: purple;
+  width: 50%;
+  height: 46vh;
+  right: 0px;
+  top: 192vh;
+  z-index: 1100;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.response-cont {
+  position: absolute;
+  // background: red;
+  width: 100%;
+  height: 12vh;
+  right: 0px;
+  top: 238vh;
+  z-index: 1100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.response-btn {
+  color: white;
+  text-decoration: underline;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .footer-land {
