@@ -46,7 +46,7 @@
 }
 
 .invit-cont {
-  font-family: Sathu;
+  font-family: 'Martel', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
@@ -257,6 +257,7 @@
 .localisation-text {
   position: absolute;
   // background: gray;
+  flex-direction: column;
   width: 50%;
   height: 46vh;
   left: 0px;
@@ -271,7 +272,6 @@
 
 .localisation-map {
   position: absolute;
-  // background: purple;
   width: 50%;
   height: 46vh;
   right: 0px;
@@ -287,6 +287,7 @@
 #map {
   height: 34vh;
   width: 42vw;
+  z-index: 1200;
 }
 
 .response-cont {
