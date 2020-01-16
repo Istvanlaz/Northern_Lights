@@ -1,0 +1,2 @@
+class DressCode < ApplicationRecord
+end
