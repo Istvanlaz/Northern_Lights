@@ -3,6 +3,14 @@
     <%= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
   </div>
   <div class="carre-form">
+    <h2>Réponse</h2>
+    <form>
+      <input type="text" name="field1" placeholder="Prénom" /><br>
+      <input type="text" name="field2" placeholder="Nom" /><br>
+      <input type="email" name="field3" placeholder="Email" /><br>
+      <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea>
+      <input type="button" value="Soumettre réponse" />
+    </form>
 
   </div>
 </div>
