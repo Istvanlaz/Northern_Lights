@@ -77,8 +77,8 @@
 
 .line {
   position: absolute;
-  border: 1px solid rgba(240, 240, 240, 0.7);
-  box-shadow: 0px 0px 32px rgba(240, 240, 240, 0.7);
+  border: 0.3px solid rgba(240, 240, 240, 0.7);
+  box-shadow: 0px 0px 8px #FFFFFF;
   // z-index: 3000;
 }
 
@@ -93,7 +93,7 @@
 #line-2 {
   width: 16vw;
   height: 0.1px;
-  left: 30vw;
+  left: 29vw;
   top: 36.5vh;
   transform: rotate(236.25deg);
 }
@@ -117,7 +117,7 @@
 #line-5 {
   width: 39vh;
   height: 0.1px;
-  left: 75vw;
+  left: 76vw;
   top: 55vh;
   transform: rotate(275.25deg);
 }
@@ -133,7 +133,7 @@
 #line-7 {
   width: 41vh;
   height: 0.1px;
-  left: 48vw;
+  left: 49vw;
   top: 64vh;
   transform: rotate(260.25deg);
 }
