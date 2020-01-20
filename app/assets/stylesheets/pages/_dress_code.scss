@@ -12,13 +12,12 @@
   // background-size: cover;
 }
 
-.dc-chart {
-  background: green;
+.dc-pic {
   height: 100vh;
   width: 100%;
 }
 
-.dc-chart img {
+.dc-pic img {
   border-radius: 50%;
   position: absolute;
   object-fit: cover;
@@ -26,116 +25,173 @@
   box-shadow: 0px 0px 32px rgba(240, 240, 240, 0.7);
 }
 
-.dc-pic-1 img {
+#dc-pic-1 img {
   top: 25vh;
   left: 8vw;
   height: 7em;
   width: 7em;
+  &:hover {
+    top: 17vh;
+    left: 2vw;
+    height: 20vw;
+    width: 20vw;
+  }
 }
 
-.dc-pic-2 img {
+#dc-pic-2 img {
   top: 16vh;
   left: 28vw;
   height: 9em;
   width: 9em;
+  &:hover {
+    top: 9vh;
+    left: 22vw;
+    height: 20vw;
+    width: 20vw;
+    // z-index: 3000;
+  }
 }
 
-.dc-pic-3 img {
+#dc-pic-3 img {
   top: 39vh;
   left: 38vw;
   height: 6.2em;
   width: 6.2em;
+  &:hover {
+    top: 31vh;
+    left: 33vw;
+    height: 20vw;
+    width: 20vw;
+  }
 }
 
-.dc-pic-4 img {
+#dc-pic-4 img {
   top: 35vh;
   left: 53vw;
   height: 8.5em;
   width: 8.5em;
+  &:hover {
+    top: 29vh;
+    left: 47.5vw;
+    height: 20vw;
+    width: 20vw;
+  }
 }
 
-.dc-pic-5 img {
+#dc-pic-5 img {
   top: 22vh;
   left: 80vw;
   height: 12em;
   width: 12em;
+  &:hover {
+    top: 20vh;
+    left: 78vw;
+    height: 20vw;
+    width: 20vw;
+  }
 }
 
-.dc-pic-6 img {
+#dc-pic-6 img {
   top: 64vh;
   left: 80vw;
   height: 9em;
   width: 9em;
+  &:hover {
+    top: 60vh;
+    left: 76vw;
+    height: 20vw;
+    width: 20vw;
+  }
 }
 
-.dc-pic-7 img {
+#dc-pic-7 img {
   top: 71vh;
   left: 55vw;
   height: 11.3em;
   width: 11.3em;
+  &:hover {
+    top: 67vh;
+    left: 52vw;
+    height: 20vw;
+    width: 20vw;
+  }
 }
 
 .line {
   position: absolute;
-  border: 0.3px solid rgba(240, 240, 240, 0.7);
-  box-shadow: 0px 0px 8px #FFFFFF;
+  // border: 0.3px solid rgba(240, 240, 240, 0.7);
+  // box-shadow: 0px 0px 8px #FFFFFF;
   // z-index: 3000;
 }
 
 #line-1 {
-  width: 22vw;
-  height: 0.1px;
-  left: 12vw;
   top: 29.5vh;
-  transform: rotate(168.25deg);
+  left: 12vw;
+  background-color: transparent;
+  height: 2vh;
+  width: 22vw;
+  transform: rotate(171deg);
+  background-image: linear-gradient(to bottom right, transparent, transparent, transparent, white, transparent, transparent, transparent);
 }
 
 #line-2 {
-  width: 16vw;
-  height: 0.1px;
-  left: 29vw;
-  top: 36.5vh;
-  transform: rotate(236.25deg);
+  top: 37.5vh;
+  left: 30vw;
+  background-color: transparent;
+  height: 2vh;
+  width: 17vw;
+  transform: rotate(238.25deg);
+  background-image: linear-gradient(to bottom right, transparent, transparent, transparent, white, transparent, transparent, transparent);
 }
 
 #line-3 {
-  width: 17vw;
-  height: 0.1px;
-  left: 42vw;
-  top: 45.5vh;
-  transform: rotate(176.25deg);
+  top: 44.5vh;
+  left: 41vw;
+  background-color: transparent;
+  height: 2vh;
+  width: 18vw;
+  transform: rotate(180.25deg);
+  background-image: linear-gradient(to bottom right, transparent, transparent, transparent, white, transparent, transparent, transparent);
 }
 
 #line-4 {
-  width: 31vw;
-  height: 0.1px;
-  left: 58vw;
   top: 40vh;
-  transform: rotate(170.25deg);
+  left: 57vw;
+  background-color: transparent;
+  height: 2vh;
+  width: 31vw;
+  transform: rotate(172.25deg);
+  background-image: linear-gradient(to bottom right, transparent, transparent, transparent, white, transparent, transparent, transparent);
 }
 
 #line-5 {
-  width: 39vh;
-  height: 0.1px;
-  left: 76vw;
   top: 55vh;
-  transform: rotate(275.25deg);
+  left: 75vw;
+  background-color: transparent;
+  height: 2vh;
+  width: 24vw;
+  transform: rotate(277.25deg);
+  background-image: linear-gradient(to bottom right, transparent, transparent, transparent, white, transparent, transparent, transparent);
 }
 
 #line-6 {
-  width: 26vw;
-  height: 0.1px;
-  left: 61vw;
-  top: 79vh;
-  transform: rotate(165.25deg);
+  top: 78vh;
+  left: 62vw;
+  background-color: transparent;
+  height: 2vh;
+  width: 25vw;
+  transform: rotate(169.25deg);
+  background-image: linear-gradient(to bottom right, transparent, transparent, transparent, white, transparent, transparent, transparent);
 }
 
 #line-7 {
-  width: 41vh;
-  height: 0.1px;
-  left: 49vw;
   top: 64vh;
-  transform: rotate(260.25deg);
+  left: 48vw;
+  background-color: transparent;
+  height: 2vh;
+  width: 25vw;
+  transform: rotate(262.25deg);
+  background-image: linear-gradient(to bottom right, transparent, transparent, transparent, white, transparent, transparent, transparent);
 }
 
 
