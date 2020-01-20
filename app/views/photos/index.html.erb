@@ -1,2 +1,66 @@
-<h1>Photos#index</h1>
-<p>Find me in app/views/photos/index.html.erb</p>
+<div class="photos-cont">
+  <div class="photos-bg">
+    <%= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
+  </div>
+  <div class="photo-booth">
+   <!--  <#% @courses.each_with_index do |course, index| %>
+      <div class="notes"
+           data-target="sliders.notes"
+           data-sliders-index="<%#= index+1 %>">
+        <%#= render partial: 'courses/note', locals: { class_notes: course.class_notes, delete_path: Proc.new{|note_id| class_note_path(note_id) } } %>
+      </div>
+
+    <%# end %> -->
+  </div>
+  <div class="photos-box">
+    <div class="photos-chart">
+      <div class="chart-top">
+        <div class="photos-pic" id="photos-pic-1">
+          <%= image_tag("dress_code/bs_pic1.png", alt: "Another bulshit pic") %>
+        </div>
+
+        <div class="photos-pic" id="photos-pic-2">
+          <%= image_tag("dress_code/bs_pic2.PNG", alt: "A bulshit pic") %>
+        </div>
+
+        <div class="photos-pic" id="photos-pic-3">
+          <%= image_tag("dress_code/bs_pic1.png", alt: "Another bulshit pic") %>
+        </div>
+
+        <div class="photos-pic" id="photos-pic-4">
+          <%= image_tag("dress_code/bs_pic2.PNG", alt: "A bulshit pic") %>
+        </div>
+
+        <div class="photos-pic" id="photos-pic-5">
+          <%= image_tag("dress_code/bs_pic1.png", alt: "Another bulshit pic") %>
+        </div>
+      </div>
+
+      <div class="chart-bottom">
+        <div class="photos-pic" id="photos-pic-6">
+          <%= image_tag("dress_code/bs_pic2.PNG", alt: "A bulshit pic") %>
+        </div>
+
+        <div class="photos-pic" id="photos-pic-7">
+          <%= image_tag("dress_code/bs_pic1.png", alt: "Another bulshit pic") %>
+        </div>
+      </div>
+
+      <div class="lines">
+        <div class="photos-line" id="photos-line-1"></div>
+
+        <div class="photos-line" id="photos-line-2"></div>
+
+        <div class="photos-line" id="photos-line-3"></div>
+
+        <div class="photos-line" id="photos-line-4"></div>
+
+        <div class="photos-line" id="photos-line-5"></div>
+
+        <div class="photos-line" id="photos-line-6"></div>
+
+        <div class="photos-line" id="photos-line-7"></div>
+      </div>
+    </div>
+  </div>
+</div>
