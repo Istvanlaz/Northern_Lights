@@ -1,13 +1,15 @@
 <div class="landing-cont">
-  <div class="bg_landing">
-    <div class="bg-img">
-      <%= image_tag("Background_Landing_Northern_Lights.jpg", alt: "Picture of Northern Lights over mountains bordered by water") %>
-    </div>
-    <div class="title-ban">
-      <%= image_tag("Icon_Front_01.png", alt: "Northern Lights") %>
-    </div>
-    <div class="next-sign">
-      <%= image_tag("Icon_Front_02.png", alt: "Next Sign") %>
+  <div class="landing-fixed-background">
+    <%= image_tag("Background_Landing_Northern_Lights.jpg", alt: "Picture of Northern Lights over mountains bordered by water") %>
+  </div>
+  <div class="landing-scroll">
+    <div class="title-cont">
+      <div class="title-ban">
+        <%= image_tag("Icon_Front_01.png", alt: "Northern Lights") %>
+      </div>
+      <div class="next-sign">
+        <%= image_tag("Icon_Front_02.png", alt: "Next Sign") %>
+      </div>
     </div>
     <div class="invit-cont">
       <div class="invitation-img">
@@ -71,8 +73,7 @@
 
       <div class="localisation-map">
         <div id="map" style="height: 34vh; width: 42vw"></div>
-<!--         <img id="map" src='https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=pk.eyJ1IjoiaXN0dmFubGF6IiwiYSI6ImNrNTVwMjNucDA4OGUzaG4xd3VlNmswb3IifQ.6gKRaulwU1Fx5C0VeyrXtg'>
- -->      </div>
+      </div>
 
       <div class="invit-groups">
         Groupe1  -  Groupe2  -  Groupe3  -  Groupe4  -  Groupe5
@@ -80,7 +81,7 @@
 
       <div class="response-cont">
         <div class="btn response-btn">
-          Répondre à l'invitation
+          <%= link_to "Répondre à l'invitation",  repondre_index_path %>
         </div>
       </div>
     </div>

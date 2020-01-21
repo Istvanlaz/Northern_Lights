@@ -1,48 +1,62 @@
+// body {
+//   overflow-x: hidden;
+//   width: 100vw;
+// }
+
 .landing-cont {
   position: relative;
-  top: 58px;
+  top: 8vh;
+  height: 100%;
+  width: 100vw;
   bottom: 90px;
 }
 
-.bg_landing img {
-  height: 95vh;
-  width:100vw;
-}
-
-.bg-img {
-  z-index: 3;
+.landing-fixed-background {
   position: fixed;
-  background-size: cover;
+  top: 8vh;
+  height: 95vh;
+  width: 100vw;
 }
 
-.title-ban {
+.landing-fixed-background img {
+  height: 100vh;
   width: 100vw;
-  display: flex;
-  justify-content: center;
+  object-fit: cover;
+  z-index: 3;
 }
+
+.title-cont {
+  position: absolute;
+  top: 8vh;
+  height: 75vh;
+  width: 100vw;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// .title-ban {
+//   width: 100vw;
+//   display: flex;
+//   justify-content: center;
+// }
 
 .title-ban img {
-  display: block;
-  position: absolute;
   width: 75vw;
-  height: 30vw;
-  z-index: 5;
-  top: 4vw;
+  height: 22vw;
 }
 
-.next-sign {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-}
+// .next-sign {
+//   width: 100vw;
+//   display: flex;
+//   justify-content: center;
+// }
 
 .next-sign img {
-  display: block;
-  position: absolute;
-  width: 27vw;
-  height: 27vw;
-  z-index: 5;
-  top: 22vw;
+  width: 20vw;
+  height: 20vw;
 }
 
 .invit-cont {
@@ -52,7 +66,7 @@
   font-size: 1em;
   line-height: 31px;
 
-  color: #FFFFFF;
+  color: rgb(226,226,226);
 }
 
 .invitation-img {
@@ -73,7 +87,7 @@
 .invit-txt-top-left {
   position: absolute;
   // background: green;
-  width: 33%;
+  width: 33vw;
   height: 22vh;
   left: 0px;
   top: 100vh;
@@ -90,7 +104,7 @@
 .invit-txt-top-right {
   position: absolute;
   // background: green;
-  width: 33%;
+  width: 33vw;
   height: 22vh;
   right: 0px;
   top: 100vh;
@@ -107,7 +121,7 @@
 .invit-txt-top-centre {
   position: absolute;
   // background: red;
-  width: 100%;
+  width: 100vw;
   height: 8vh;
   right: 0px;
   top: 120vh;
@@ -127,7 +141,9 @@
 .invit-name-left {
   position: absolute;
   // background: purple;
-  width: 40%;
+
+
+  width: 40vw;
   height: 28vh;
   left: 0px;
   top: 128vh;
@@ -144,7 +160,7 @@
 .invit-name-right {
   position: absolute;
   // background: purple;
-  width: 40%;
+  width: 40vw;
   height: 28vh;
   right: 0px;
   top: 128vh;
@@ -162,8 +178,8 @@
   position: absolute;
   // background: blue;
   height: 28vh;
-  width: 20%;
-  left: 40%;
+  width: 20vw;
+  left: 40vw;
   top: 128vh;
   display: flex;
   align-items: center;
@@ -179,7 +195,7 @@
 .invit-date {
   position: absolute;
   // background: red;
-  width: 100%;
+  width: 100vw;
   height: 11vh;
   right: 0px;
   top: 157vh;
@@ -194,7 +210,7 @@
 .invit-bottom-left {
   position: absolute;
   // background: green;
-  width: 33%;
+  width: 33vw;
   height: 24vh;
   left: 0px;
   top: 167vh;
@@ -209,9 +225,9 @@
 .invit-bottom-centre {
   position: absolute;
   // background: blue;
-  width: 34%;
+  width: 34vw;
   height: 24vh;
-  left: 33%;
+  left: 33vw;
   top: 167vh;
   padding-bottom: 1.87em;
   z-index: 1100;
@@ -225,7 +241,7 @@
 .invit-bottom-right {
   position: absolute;
   // background: green;
-  width: 33%;
+  width: 33vw;
   height: 24vh;
   right: 0px;
   top: 167vh;
@@ -240,7 +256,7 @@
 .invit-groups {
   position: absolute;
   // background: red;
-  width: 100%;
+  width: 100vw;
   height: 8vh;
   right: 0px;
   top: 188vh;
@@ -258,7 +274,7 @@
   position: absolute;
   // background: gray;
   flex-direction: column;
-  width: 50%;
+  width: 50vw;
   height: 46vh;
   left: 0px;
   top: 192vh;
@@ -272,7 +288,7 @@
 
 .localisation-map {
   position: absolute;
-  width: 50%;
+  width: 50vw;
   height: 46vh;
   right: 0px;
   top: 192vh;
@@ -293,7 +309,7 @@
 .response-cont {
   position: absolute;
   // background: red;
-  width: 100%;
+  width: 100vw;
   height: 12vh;
   right: 0px;
   top: 238vh;
@@ -305,11 +321,20 @@
   text-align: center;
 }
 
-.response-btn {
-  color: white;
+.response-cont a {
+  color: rgb(226,226,226);
   text-decoration: underline;
   &:hover {
-    color: white;
+    color: rgb(226,226,226);
+    text-decoration: none;
+  }
+}
+
+.response-btn {
+  color: rgb(226,226,226);
+  text-decoration: underline;
+  &:hover {
+    color: rgb(226,226,226);
     text-decoration: none;
   }
 }
@@ -320,17 +345,17 @@
   left : 0px;
   top: 250vh;
   height: 90px;
-  width: 100%;
+  width: 100vw;
   padding: 29px 0px;
   background-color: #00020c;
-  color: white;
+  color: rgb(226,226,226);
   text-align: center;
   font-size: 0.7em;
   z-index: 1000;
 }
 
 
-@media(max-width: 992px) {
+@media screen and (max-width: 992px) {
   .title-ban img {
     top: 9vw;
   }
@@ -340,14 +365,109 @@
   }
 }
 
-@media(max-width: 768px) {
-    .title-ban img {
-    top: 3vw;
+@media screen and (max-width: 699px) {
+  .invit-cont {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+    line-height: 22px;
   }
 
-  .next-sign img {
-    top: 30vw;
+  .invitation-img img {
+    height: 142vh;
   }
+
+  .invit-txt-top-left {
+    width: 50vw;
+    font-size: 1.3em;
+  }
+
+  .invit-txt-top-right {
+    width: 50vw;
+    font-size: 1.3em;
+  }
+
+  .invit-txt-top-centre {
+    height: 11vh;
+  }
+
+  .invit-name-left {
+    font-size: 2.7em;
+  }
+
+  .invit-logo img {
+    height: 7em;
+    width: 7em;
+  }
+
+  .invit-name-right {
+    font-size: 2.7em;
+  }
+
+  .invit-date {
+    height: 8vh;
+    top: 154vh;
+  }
+
+  .invit-bottom-left {
+    top: 162vh;
+    width: 50vw;
+    height: 18vh;
+  }
+
+  .invit-bottom-right {
+    top: 162vh;
+    width: 50vw;
+    height: 18vh;
+  }
+
+  .invit-bottom-centre {
+    padding-bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 16vh;
+    top: 175vh;
+  }
+
+  .invit-groups {
+    top: 189vh;
+  }
+
+  .localisation-map {
+    display: none;
+  }
+
+  .localisation-text {
+    width: 100vw;
+    top: 197vh;
+    height: 23vh;
+  }
+
+  .response-cont {
+    top: 219vh;
+  }
+
+  .response-cont a {
+    font-size: 0.7em;
+  }
+
+  .footer-land {
+    top: 230vh;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .invit-cont {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.6em;
+    line-height: 22px;
+  }
+
+  .response-cont {
+    top: 220vh;
+  }
+
 }
 
 
