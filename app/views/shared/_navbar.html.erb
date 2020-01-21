@@ -1,39 +1,32 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-northern-lights">
-  <%#= link_to "#", class: "navbar-brand" do %>
-    <%#= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
-    <%# end %>
-
- <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button> -->
-
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <div class="navbar-cont">
-      <ul class="navbar-nav">
-        <li class="navbar-item">
-          <%= link_to "Accueil", accueil_index_path, class: "navbar-link" %>
-        </li>
-        <li class="navbar-item">
-          <%= link_to "Répondre",  repondre_index_path, class: "navbar-link" %>
-        </li>
-        <li class="navbar-item">
-          <%= link_to "Lifts", lifts_path, class: "navbar-link" %>
-        </li>
-        <li class="navbar-item">
-          <%= link_to "Dress Code", dress_code_index_path, class: "navbar-link" %>
-        </li>
-        <li class="navbar-item">
-          <%= link_to "Photos", photos_path, class: "navbar-link" %>
-        </li>
-        <li class="navbar-item">
-          <%= link_to "Remerciements", remerciements_path, class: "navbar-link" %>
-        </li>
-      </ul>
-    </div>
+<nav class="navbar-northern-lights">
+    <ul class="navbar-links">
+      <li class="navbar-item">
+        <%= link_to "Accueil", accueil_index_path %>
+      </li>
+      <li class="navbar-item">
+        <%= link_to "Répondre",  repondre_index_path %>
+      </li>
+      <li class="navbar-item">
+        <%= link_to "Lifts", lifts_path %>
+      </li>
+      <li class="navbar-item">
+        <%= link_to "Dress Code", dress_code_index_path %>
+      </li>
+      <li class="navbar-item">
+        <%= link_to "Photos", photos_path %>
+      </li>
+      <li class="navbar-item">
+        <%= link_to "Remerciements", remerciements_path %>
+      </li>
+    </ul>
+  <div class="logo"><%= link_to "Northern Lights", accueil_index_path %></div>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
   </div>
 
-</div>
+</nav>
 
 <!-- <li class="nav-item dropdown">
             <%#= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
