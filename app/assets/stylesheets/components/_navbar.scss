@@ -3,12 +3,12 @@
   justify-content: space-evenly;
   align-items: center;
   background-color: #00020c;
-  width: 100%;
+  width: 100vw;
   height: 8vh;
   position: fixed;
   font-family: 'Oswald', sans-serif;
   margin-bottom: 0;
-  z-index: 2000;
+  z-index: 20000;
   top: 0px;
   left: 0px;
 }
@@ -18,7 +18,7 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 0 8vw;
-  width: 92%;
+  width: 92vw;
   height: 8vh;
   letter-spacing: 2px;
   margin-bottom: 0px;
@@ -84,6 +84,9 @@
   .navbar-northern-lights {
     justify-content: space-between;
     padding: 0 5vw;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   .navbar-links {
@@ -96,8 +99,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 50%;
-    transform: translateX(100%);
+    width: 50vw;
+    transform: translateX(100vw);
     transition: transform 0.5s ease-in;
   }
 
@@ -118,7 +121,7 @@
 }
 
 .nav-active {
-  transform: translateX(0%);
+  transform: translateX(0vw);
 }
 
 @keyframes navLinkFade{
