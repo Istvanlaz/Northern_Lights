@@ -207,11 +207,11 @@
 }
 
 #line-2 {
-  top: 37.5vh;
+  top: 33.5vh;
   left: 30vw;
   background-color: transparent;
   height: 2vh;
-  width: 17vw;
+  width: 14vw;
   transform: rotate(238.25deg);
   background-image: linear-gradient(to bottom right, transparent, transparent, transparent, white, transparent, transparent, transparent);
 }
@@ -265,5 +265,291 @@
   transform: rotate(262.25deg);
   background-image: linear-gradient(to bottom right, transparent, transparent, transparent, white, transparent, transparent, transparent);
 }
+
+@media screen and (max-width: 1024px) {
+  .line {
+    display: none;
+  }
+
+  .dc-cont {
+    height: 246vh;
+  }
+
+  .dc-bg2 img {
+    height: 170vh;
+    object-fit: cover;
+  }
+
+  .constellation {
+    top: 18vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 146vh;
+    grid-gap: 12px;
+    margin: 12px;
+  }
+
+  .dc-pic {
+    height: 0;
+    width: 0;
+  }
+
+  .dc-pic img {
+    border-radius: 3%;
+    position: relative;
+    object-fit: cover;
+    z-index: 30;
+    box-shadow: none;
+  }
+
+
+  #dc-pic-1 img {
+    top: 0;
+    left: 0;
+    height: 35vh;
+    width: 47vw;
+    &:hover {
+      top: 0;
+      left: 0;
+      height: 35vh;
+      width: 47vw;
+      box-shadow: 0px 0px 32px rgba(240, 240, 240, 0.7);
+    }
+  }
+
+  #dc-pic-2 img {
+    top: 0;
+    left: 0;
+    height: 35vh;
+    width: 47vw;
+    &:hover {
+      top: 0;
+      left: 0;
+      height: 35vh;
+      width: 47vw;
+      box-shadow: 0px 0px 32px rgba(240, 240, 240, 0.7);
+    }
+  }
+
+  #dc-pic-3 img {
+    top: 0;
+    left: 0;
+    height: 35vh;
+    width: 47vw;
+    &:hover {
+      top: 0;
+      left: 0;
+      height: 35vh;
+      width: 47vw;
+      box-shadow: 0px 0px 32px rgba(240, 240, 240, 0.7);
+    }
+  }
+
+  #dc-pic-4 img {
+    top: 0;
+    left: 0;
+    height: 35vh;
+    width: 47vw;
+    &:hover {
+      top: 0;
+      left: 0;
+      height: 35vh;
+      width: 47vw;
+      box-shadow: 0px 0px 32px rgba(240, 240, 240, 0.7);
+    }
+  }
+
+  #dc-pic-5 img {
+    top: 0;
+    left: 0;
+    height: 35vh;
+    width: 47vw;
+    &:hover {
+      top: 0;
+      left: 0;
+      height: 35vh;
+      width: 47vw;
+      box-shadow: 0px 0px 32px rgba(240, 240, 240, 0.7);
+    }
+  }
+
+  #dc-pic-6 img {
+    top: 0;
+    left: 0;
+    height: 35vh;
+    width: 47vw;
+    &:hover {
+      top: 0;
+      left: 0;
+      height: 35vh;
+      width: 47vw;
+      box-shadow: 0px 0px 32px rgba(240, 240, 240, 0.7);
+    }
+  }
+
+  #dc-pic-7 img {
+    top: 0;
+    left: 0;
+    height: 35vh;
+    width: 47vw;
+    &:hover {
+      top: 0;
+      left: 0;
+      height: 35vh;
+      width: 47vw;
+      box-shadow: 0px 0px 32px rgba(240, 240, 240, 0.7);
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .dc-cont {
+    height: 459vh;
+  }
+
+  .dc-title h1 {
+    font-size: 2em;
+  }
+
+  .dc-sub-title {
+    font-size: 1em;
+  }
+
+  .dc-chart-title h2 {
+    font-size: 2em;
+  }
+
+  .dc-bg2 img {
+    height: 386vh;
+    object-fit: cover;
+  }
+
+  .constellation {
+    top: 18vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 360vh;
+    grid-gap: 12px;
+    margin: 12px;
+  }
+
+  #dc-pic-1 img {
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 94vw;
+    &:hover {
+      top: 0;
+      left: 0;
+      height: 50vh;
+      width: 94vw;
+      box-shadow: none;
+    }
+  }
+
+  #dc-pic-2 img {
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 94vw;
+    &:hover {
+      top: 0;
+      left: 0;
+      height: 50vh;
+      width: 94vw;
+      box-shadow: none;
+    }
+  }
+
+  #dc-pic-3 img {
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 94vw;
+    &:hover {
+      top: 0;
+      left: 0;
+      height: 50vh;
+      width: 94vw;
+      box-shadow: none;
+    }
+  }
+
+  #dc-pic-4 img {
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 94vw;
+    &:hover {
+      top: 0;
+      left: 0;
+      height: 50vh;
+      width: 94vw;
+      box-shadow: none;
+    }
+  }
+
+  #dc-pic-5 img {
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 94vw;
+    &:hover {
+      top: 0;
+      left: 0;
+      height: 50vh;
+      width: 94vw;
+      box-shadow: none;
+    }
+  }
+
+  #dc-pic-6 img {
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 94vw;
+    &:hover {
+      top: 0;
+      left: 0;
+      height: 50vh;
+      width: 94vw;
+      box-shadow: none;
+    }
+  }
+
+  #dc-pic-7 img {
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 94vw;
+    &:hover {
+      top: 0;
+      left: 0;
+      height: 50vh;
+      width: 94vw;
+      box-shadow: none;
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+ .dc-title h1 {
+    font-size: 1.5em;
+  }
+
+  .dc-sub-title {
+    font-size: 0.7em;
+  }
+
+  .dc-chart-title h2 {
+    font-size: 1.5em;
+  }
+}
+
+
+
+
+
+
 
 
