@@ -30,3 +30,6 @@ const mapLayout = () => {
 };
 
 mapLayout();
+
+import "controllers"
+
