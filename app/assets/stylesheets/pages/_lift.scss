@@ -1,0 +1,165 @@
+.lift-cont {
+  position: relative;
+  top: 8vh;
+  height: 89vh;
+  width: 100vw;
+  bottom: 90px;
+  overflow: hidden;
+}
+
+.lift-bg img {
+  height: 81vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.lift-subcont {
+  position: absolute;
+  top: 0;
+  height: 81vh;
+  width: 100%;
+  // background: blue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bob-card {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  height: 30vh;
+  width: 30vh;
+  border-radius: 10%;
+  box-shadow: inset 0 0 10px #000000;
+  cursor: pointer;
+  &:hover {
+    box-shadow: inset 0 0 15px #000000;
+  }
+}
+
+.bob-card a {
+  text-decoration: none;
+  color: inherit;
+  padding: 10vh 0;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.bob-new {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  height: 70vh;
+  width: 42vw;
+  border-radius: 10%;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.bob-new form {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  font-size: 14px;
+}
+
+.bob-new h5 {
+  margin-bottom: 22px;
+}
+
+.bob-new a {
+  color: #0E0000;
+  &:hover {
+    color: #0E0000;
+  }
+}
+
+.form-control-lg {
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.list-cont {
+  position: absolute;
+  top: 0;
+  height: 81vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-cont td {
+  padding: 5px 16px;
+  text-align: center;
+}
+
+.bob-list {
+  // background-color: #f55e55;
+  // border-color: green;
+  // margin: 2px;
+  border-radius: 5px;
+  width: 80vw;
+  margin: 0 10vw;
+  background-color: white;
+}
+
+.bob-list tr {
+  border-radius: 5px;
+  // background-color: green;
+  margin: 5px;
+}
+
+// .table_row :hover {
+//   box-shadow: 0px 0px 0px 3px rgba(50,50,50,0.1)
+// }
+
+.tr_header {
+  padding: 16px 16px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.td_header {
+  text-align: center;
+}
+
+#td_name {
+  width: 15vw;
+  vertical-align: middle;
+}
+
+#td_rallying_point {
+  width: 20vw;
+  vertical-align: middle;
+}
+
+#td_departure {
+  width: 10vw;
+  vertical-align: middle;
+}
+
+#td_return {
+  width: 10vw;
+  vertical-align: middle;
+}
+
+#td_places {
+  width: 5vw;
+  vertical-align: middle;
+}
+
+#td_contact {
+  width: 10vw;
+  vertical-align: middle;
+}
+
