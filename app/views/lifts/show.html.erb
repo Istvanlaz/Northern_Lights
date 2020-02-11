@@ -1,2 +1,39 @@
-<h1>Lifts#show</h1>
-<p>Find me in app/views/lifts/show.html.erb</p>
+<div class="lift-cont">
+    <div class="lift-bg">
+      <%= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
+    </div>
+  <div class="list-cont">
+<!--
+    <#% @lifts.each do |item| %>
+      <ul><h5><%#= item.first_name %> <%#= item.family_name %>, <%#= item.rallying_point %>, <%#= item.departure %>, <%#= item.return %>, <%#= item.contact %>, </h5></ul>
+    <#% end %>
+ -->
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered bob-list">
+        <tr class="tr_header">
+          <th colspan="6">
+           <strong>NOS SUPER-MARIOS!  🍄 🌟</strong>
+          </th>
+        </tr>
+        <tr>
+          <td class="td_header" id="td_name"><strong> NOM </strong></td>
+          <td class="td_header" id="td_rallying_point"><strong> POINT DE RALLIEMENT</strong></td>
+          <td class="td_header" id="td_departure"><strong> HEURE DE <br> DÉPART </strong></td>
+          <td class="td_header" id="td_return"><strong> HEURE DE <br> RETOUR </strong></td>
+          <td class="td_header" id="td_places"><strong> NOMBRE <br> DE PLACES </strong></td>
+          <td class="td_header" id="td_contact"><strong> CONTACT </strong></td>
+        </tr>
+        <% @lifts.each do |item| %>
+          <tr class="table_row">
+            <td><%= item.first_name %> <%= item.family_name %></td>
+            <td><%= item.rallying_point %></td>
+            <td><%= item.departure.hour %>:<%= item.departure.min %></td>
+            <td><%= item.return.hour %>:<%= item.return.min %></td>
+            <td><%= item.places_available %></td>
+            <td><%= item.contact %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+</div>

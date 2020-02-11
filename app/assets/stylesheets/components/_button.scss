@@ -1,0 +1,10 @@
+.btn-lift {
+  border-radius: 5px;
+  font-size: 14px;
+  border-color: #0E0000;
+  width: 45%;
+  &:hover {
+    background-color: rgba(215,215,215,0.7);
+    // opacity: 50%;
+  }
+}
