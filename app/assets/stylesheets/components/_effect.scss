@@ -1,0 +1,15 @@
+.effect3d {
+  animation-name: effect3d;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes effect3d {
+  to {
+    text-shadow: 0 1px 0 #2a6d8e, 0 2px 0 #326c89, 0 3px 0 #33647c, 0 4px 0 #335D73,
+      0 5px 0 #aaa, 0 6px 1px rgba(51, 93, 115, 0.1), 0 0 5px rgba(51, 93, 115, 0.1),
+      0 1px 3px rgba(51, 93, 115, 0.3), 0 3px 5px rgba(51, 93, 115, 0.2),
+      0 5px 10px rgba(51, 93, 115, 0.25), 0 10px 10px rgba(51, 93, 115, 0.2),
+      0 20px 20px rgba(51, 93, 115, 0.15);
+  }
+}

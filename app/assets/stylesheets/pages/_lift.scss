@@ -89,8 +89,8 @@
 
 .list-cont {
   position: absolute;
-  top: 0;
   height: 81vh;
+  top: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -98,68 +98,123 @@
   align-items: center;
 }
 
-.list-cont td {
-  padding: 5px 16px;
-  text-align: center;
+.list-cont-big {
+  position: absolute;
+  height: 81vh;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: scroll;
 }
 
-.bob-list {
-  // background-color: #f55e55;
-  // border-color: green;
-  // margin: 2px;
-  border-radius: 5px;
+.lift_title {
+  color: rgb(226,226,226);
+  height: 10vh;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.lift_title_empty {
+  color: rgb(226,226,226);
+  height: 10vh;
+  width: 70vw;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.empty_list img {
+  object-fit: cover;
+  height: 40vh;
+  width: 40vh;
+}
+
+.lift_table {
+  background-color: rgb(226,226,226);
   width: 80vw;
-  margin: 0 10vw;
-  background-color: white;
-}
-
-.bob-list tr {
-  border-radius: 5px;
-  // background-color: green;
-  margin: 5px;
-}
-
-// .table_row :hover {
-//   box-shadow: 0px 0px 0px 3px rgba(50,50,50,0.1)
-// }
-
-.tr_header {
-  padding: 16px 16px;
+  height: 6vh;
+  display: flex;
+  // justify-content: space-around;
+  align-items: center;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 12px;
+  border-radius: 25px;
+  margin: 3px;
 }
 
-.td_header {
-  text-align: center;
+#name_header {
+  height: 100%;
+  width: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid #00020C 0.01em;
 }
 
-#td_name {
-  width: 15vw;
-  vertical-align: middle;
+#rallying_header {
+  height: 100%;
+  width: 28%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid #00020C 0.01em;
 }
 
-#td_rallying_point {
-  width: 20vw;
-  vertical-align: middle;
+#departure_header {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid #00020C 0.01em;
 }
 
-#td_departure {
-  width: 10vw;
-  vertical-align: middle;
+#return_header {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid #00020C 0.01em;
 }
 
-#td_return {
-  width: 10vw;
-  vertical-align: middle;
+#places_header {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid #00020C 0.01em;
 }
 
-#td_places {
-  width: 5vw;
-  vertical-align: middle;
+#contact_header {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid #00020C 0.01em;
 }
 
-#td_contact {
-  width: 10vw;
-  vertical-align: middle;
+#ticking_box {
+  height: 100%;
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid #00020C 0.01em;
+  color: rgb(226,226,226);
+  background-color: green;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
 }
 

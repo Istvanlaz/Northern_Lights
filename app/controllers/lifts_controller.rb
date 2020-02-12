@@ -4,8 +4,12 @@ class LiftsController < ApplicationController
   end
 
   def show
-    @lifts = Lift.all
-    @lift = Lift.find(params[:id])
+    if @lifts.nil?
+      @lifts = Lift.all
+    else
+      @lifts = Lift.all
+      @lift = Lift.find(params[:id])
+    end
   end
 
   def new
