@@ -160,7 +160,8 @@
 }
 
 .lists_header {
-  word-wrap: break-word;
+  word-break: break-all;
+  padding: 3px;
 }
 
 #name_header {
@@ -215,7 +216,6 @@
   align-items: center;
   justify-content: center;
   border: solid #00020C 0.01em;
-  overflow-wrap: break-word;
 }
 
 #ticking_box {
