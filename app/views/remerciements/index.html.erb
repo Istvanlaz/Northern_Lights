@@ -1,2 +1,18 @@
-<h1>Remerciements#index</h1>
-<p>Find me in app/views/remerciements/index.html.erb</p>
+<div class="page-remerciements">
+  <div class="bg-img-remerciements">
+    <%= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
+  </div>
+  <div class="form-area">
+    <h2>Réponse</h2>
+    <form>
+      <input type="text" name="field1" placeholder="Prénom" /><br>
+      <input type="text" name="field2" placeholder="Nom" /><br>
+      <input type="email" name="field3" placeholder="Email" /><br>
+      Végétarien(ne) <input type="checkbox" name="field4"/><br>
+      <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea><br><br>
+      <button>Soumettre réponse</button>
+    </form>
+
+  </div>
+</div>
+
