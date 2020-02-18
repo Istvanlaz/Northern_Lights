@@ -2,14 +2,15 @@
   <div class="bg-img-reponse">
     <%= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
   </div>
-  <div class="carre-form">
+  <div class="form-area">
     <h2>Réponse</h2>
     <form>
       <input type="text" name="field1" placeholder="Prénom" /><br>
       <input type="text" name="field2" placeholder="Nom" /><br>
       <input type="email" name="field3" placeholder="Email" /><br>
+      Végétarien(ne) <input type="checkbox" name="field4"/><br>
       <textarea placeholder="Message" onkeyup="adjust_textarea(this)"></textarea><br><br>
-      <input type="button" value="Soumettre réponse" />
+      <button>Soumettre réponse</button>
     </form>
 
   </div>
