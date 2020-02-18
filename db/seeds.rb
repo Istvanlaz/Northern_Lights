@@ -8,6 +8,7 @@
 
 puts 'Cleaning database...'
 
+Passenger.destroy_all
 Lift.destroy_all
 
 puts 'Creating awesome lifts...'
@@ -52,6 +53,93 @@ lift_4 = Lift.create!({
 })
 
 p "Created #{Lift.count} lifts"
+
+
+
+puts 'Creating awesome passengers...'
+
+
+passenger_1 = Passenger.create!({
+  first_name: "Bob",
+  family_name: "Mbappe",
+  places: 1,
+  contact: "0476 72 73 74",
+  lift_id: lift_1.id
+})
+
+passenger_2 = Passenger.create!({
+  first_name: "Bobette",
+  family_name: "Neymar",
+  places: 1,
+  contact: "henry.dp@gmail.com",
+  lift_id: lift_1.id
+})
+
+passenger_3 = Passenger.create!({
+  first_name: "Richard",
+  family_name: "Pauletta",
+  places: 2,
+  contact: "0477 83 73 02",
+  lift_id: lift_2.id
+})
+
+passenger_4 = Passenger.create!({
+  first_name: "Georges",
+  family_name: "Di Maria",
+  places: 1,
+  contact: "0467 73 92 01",
+  lift_id: lift_3.id
+})
+
+passenger_5 = Passenger.create!({
+  first_name: "Paolo",
+  family_name: "Kimpembe",
+  places: 1,
+  contact: "0467 73 92 01",
+  lift_id: lift_1.id
+})
+
+passenger_6 = Passenger.create!({
+  first_name: "Edinson",
+  family_name: "Cavani",
+  places: 1,
+  contact: "0467 73 92 01",
+  lift_id: lift_2.id
+})
+
+passenger_7 = Passenger.create!({
+  first_name: "Julien",
+  family_name: "Pastore",
+  places: 1,
+  contact: "0467 73 92 01",
+  lift_id: lift_3.id
+})
+
+passenger_8 = Passenger.create!({
+  first_name: "Alice",
+  family_name: "Javier",
+  places: 1,
+  contact: "0467 73 92 01",
+  lift_id: lift_3.id
+})
+
+passenger_9 = Passenger.create!({
+  first_name: "Arthur",
+  family_name: "Ravioli",
+  places: 1,
+  contact: "0467 73 92 01",
+  lift_id: lift_4.id
+})
+
+p "Created #{Passenger.count} passengers"
+
+p "Now, we can say for instance that #{lift_1.first_name} (our 1st Lift!) will have #{lift_1.passengers.count} passengers!"
+
+p "That #{lift_2.first_name} (our 2nd Lift!) will have #{lift_2.passengers.count} passengers!"
+
+p "That #{lift_3.first_name} (our 3rd Lift!) will have #{lift_3.passengers.count} passengers!"
+
+p "And that #{lift_4.first_name} (our last seeded Lift so far!) will have #{lift_4.passengers.count} passengers!"
 
 
 
