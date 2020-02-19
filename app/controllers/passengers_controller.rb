@@ -1,11 +1,12 @@
 class PassengersController < ApplicationController
+  before_action :set_lift
+
   def index
     @passengers = Passenger.all
   end
 
   def new
     @passenger = Passenger.new
-    @lift = Lift.find(params[:lift_id])
   end
 
   def edit
@@ -14,7 +15,6 @@ class PassengersController < ApplicationController
 
   def create
     @passenger = Passenger.new(passenger_params)
-    @lift = Lift.find(params[:lift_id])
     @passenger.lift = @lift
     if @passenger.save
       redirect_to lifts_path
@@ -36,6 +36,10 @@ class PassengersController < ApplicationController
   end
 
   private
+
+  def set_lift
+    @lift = Lift.find(params[:lift_id])
+  end
 
   def passenger_params
     params.require(:passenger).permit(:first_name, :family_name, :places, :contact, :aller, :retour, :lift_id)

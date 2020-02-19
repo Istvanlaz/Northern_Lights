@@ -162,6 +162,7 @@
 .lists_header {
   word-break: break-all;
   padding: 3px;
+  hyphens: auto;
 }
 
 #name_header {
@@ -175,16 +176,19 @@
 
 #rallying_header {
   height: 100%;
-  width: 28%;
+  width: 24%;
   display: flex;
   align-items: center;
   justify-content: center;
   border: solid #00020C 0.01em;
+  word-break: normal;
+  overflow: scroll;
+
 }
 
 #departure_header {
   height: 100%;
-  width: 10%;
+  width: 8%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -193,7 +197,7 @@
 
 #return_header {
   height: 100%;
-  width: 10%;
+  width: 8%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,7 +206,7 @@
 
 #places_header {
   height: 100%;
-  width: 10%;
+  width: 8%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,15 +222,52 @@
   border: solid #00020C 0.01em;
 }
 
-#ticking_box {
+#ticking_box_header {
   height: 100%;
-  width: 5%;
+  width: 14%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid #00020C 0.01em;
+  border: solid #00020C 0.1em;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+#ticking_box_valid {
+  height: 100%;
+  width: 14%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid #00020C 0.1em;
   color: rgb(226,226,226);
   background-color: green;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  &:hover {
+    background-color: grey;
+  }
+}
+
+#ticking_box_valid a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+
+  }
+}
+
+#ticking_box_full {
+  height: 100%;
+  width: 14%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid #00020C 0.1em;
+  color: rgb(226,226,226);
+  background-color: #f48025;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -336,3 +377,17 @@ label[for=no] {
 #no:checked ~ .switch label[for=no]{
   color: white;
 }
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+  .list-cont-big {
+
+  }
+
+}
+
+
+

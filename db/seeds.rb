@@ -17,7 +17,7 @@ puts 'Creating awesome lifts...'
 lift_1 = Lift.create!({
   first_name: "Emmanuel",
   family_name: "Pirlot de Corbion",
-  places_available: 4,
+  places_available: 6,
   contact: "0476 72 73 74",
   rallying_point: "Rond Point de Montgommery",
   departure: Time.strptime('11/22/2020 20:15', '%m/%d/%Y %H:%M'),
@@ -36,7 +36,7 @@ lift_2 = Lift.create!({
 lift_3 = Lift.create!({
   first_name: "Jacques",
   family_name: "Bonsergent",
-  places_available: 2,
+  places_available: 4,
   contact: "0477 83 73 02",
   rallying_point: "Métro Louise",
   departure: Time.strptime('11/22/2020 20:00', '%m/%d/%Y %H:%M')
@@ -52,7 +52,7 @@ lift_4 = Lift.create!({
   return: Time.strptime('11/22/2020 01:45', '%m/%d/%Y %H:%M')
 })
 
-p "Created #{Lift.count} lifts"
+puts "Created #{Lift.count} lifts"
 
 
 
@@ -112,7 +112,7 @@ passenger_7 = Passenger.create!({
   family_name: "Pastore",
   places: 1,
   contact: "0467 73 92 01",
-  lift_id: lift_3.id
+  lift_id: lift_1.id
 })
 
 passenger_8 = Passenger.create!({
@@ -131,15 +131,8 @@ passenger_9 = Passenger.create!({
   lift_id: lift_4.id
 })
 
-p "Created #{Passenger.count} passengers"
 
-p "Now, we can say for instance that #{lift_1.first_name} (our 1st Lift!) will have #{lift_1.passengers.count} passengers!"
-
-p "That #{lift_2.first_name} (our 2nd Lift!) will have #{lift_2.passengers.count} passengers!"
-
-p "That #{lift_3.first_name} (our 3rd Lift!) will have #{lift_3.passengers.count} passengers!"
-
-p "And that #{lift_4.first_name} (our last seeded Lift so far!) will have #{lift_4.passengers.count} passengers!"
+puts "Created #{Passenger.count} passengers"
 
 
 

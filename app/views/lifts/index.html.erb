@@ -42,15 +42,15 @@
         </div>
 
         <div class="lists_header" id="places_header">
-          <strong>NOMBRE<br>DE PLACES</strong>
+          <strong>PLACES<br>LIBRES</strong>
         </div>
 
         <div class="lists_header" id="contact_header">
           <strong>CONTACT</strong>
         </div>
 
-        <div class="lists_header" id="ticking_box">
-          <i class="fas fa-check"></i>
+        <div class="lists_header" id="ticking_box_header">
+          <strong>JE RÉSERVE!</strong>
         </div>
       </div>
 
@@ -77,16 +77,28 @@
           </div>
 
           <div class="lists_header" id="places_header">
-            <%= lift.places_available %>
+            <% array = [0] %>
+              <% lift.passengers.each do |passenger| %>
+                <% array << passenger.places %>
+              <% end %>
+            <% places_used = array.inject(0){|sum, pl| sum + pl } %>
+            <%= lift.places_available - places_used %>
           </div>
 
           <div class="lists_header" id="contact_header">
             <%= lift.contact %>
           </div>
 
-          <div class="lists_header" id="ticking_box">
-            <%= link_to "V", new_lift_passenger_path(lift) %>
-          </div>
+          <% if places_used == lift.places_available %>
+            <div class="lists_header" id="ticking_box_full">
+              <strong>FULL</strong>
+            </div>
+          <% else %>
+            <div class="lists_header" id="ticking_box_valid">
+
+              <%= link_to "GO!", new_lift_passenger_path(lift) %>
+            </div>
+          <% end %>
         </div>
       <% end %>
     </div>
@@ -117,15 +129,15 @@
         </div>
 
         <div class="lists_header" id="places_header">
-          <strong>NOMBRE<br>DE PLACES</strong>
+          <strong>PLACES<br>LIBRES</strong>
         </div>
 
         <div class="lists_header" id="contact_header">
           <strong>CONTACT</strong>
         </div>
 
-        <div class="lists_header" id="ticking_box">
-          <i class="fas fa-check"></i>
+        <div class="lists_header" id="ticking_box_header">
+          <strong>JE RÉSERVE!</strong>
         </div>
       </div>
 
@@ -152,26 +164,28 @@
           </div>
 
           <div class="lists_header" id="places_header">
-            <%= lift.places_available %>
+            <% array = [0] %>
+              <% lift.passengers.each do |passenger| %>
+                <% array << passenger.places %>
+              <% end %>
+            <% places_used = array.inject(0){|sum, pl| sum + pl } %>
+            <%= lift.places_available - places_used %>
           </div>
 
           <div class="lists_header" id="contact_header">
             <%= lift.contact %>
           </div>
 
-          <div class="lists_header" id="ticking_box">
-            <%= link_to "V", new_lift_passenger_path(lift) %>
-          </div>
 
-            <!-- <form action="">
-              <input type="radio" name="rdo" id="yes" checked />
-              <input type="radio" name="rdo" id="no"/>
-              <div class="switch">
-                <label for="yes">Yes</label>
-                <label for="no">No</label>
-                <span></span>
-              </div>
-            </form> -->
+          <% if places_used == lift.places_available %>
+            <div class="lists_header" id="ticking_box_full">
+              <strong>FULL</strong>
+            </div>
+          <% else %>
+            <div class="lists_header" id="ticking_box_valid">
+              <%= link_to "GO!", new_lift_passenger_path(lift) %>
+            </div>
+          <% end %>
 
           <!-- <div class="burger">
             <div class="line1"></div>

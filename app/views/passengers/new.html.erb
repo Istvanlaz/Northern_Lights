@@ -11,19 +11,19 @@
           <div class="form-row">
             <div class="form-group form_inputs col-sm-6">
               <label for="first_name">PRÉNOM *</label>
-              <input type="text" name="lift[passengers][][first_name]" class="form-control form-control-lg"
-                     id="first_name" placeholder="Étienne" required>
+              <input type="text" name="passenger[first_name]" class="form-control form-control-lg"
+                     id="passenger_first_name" placeholder="Étienne" required>
             </div>
             <div class="form-group form_inputs col-sm-6">
               <label for="family_name">NOM DE FAMILLE *</label>
-              <input type="text" name="lift[passengers][][family_name]" class="form-control form-control-lg"
-                     id="family_name" placeholder="de Crécy" required>
+              <input type="text" name="passenger[family_name]" class="form-control form-control-lg"
+                     id="passenger_family_name" placeholder="de Crécy" required>
             </div>
           </div>
           <div class="form-row">
             <div class="form-group form_inputs col-sm-6">
               <label for="places">NOMBRE DE PLACES *</label>
-              <select class="form-control" id="places" name="lift[passengers][][places]">
+              <select class="form-control" id="passenger_places" name="passenger[places]">
                 <option><%= 1 %></option>
                 <option><%= 2 %></option>
                 <option><%= 3 %></option>
@@ -35,16 +35,16 @@
             </div>
             <div class="form-group form_inputs col-sm-6">
               <label for="contact">CONTACT *</label>
-              <input type="text" name="lift[passengers][][contact]" class="form-control form-control-lg"
-                     id="contact" placeholder="email or phone" required>
+              <input type="text" name="passenger[contact]" class="form-control form-control-lg"
+                     id="passenger_contact" placeholder="email or phone" required>
             </div>
           </div>
           <div class="form-row">
             <div class="form-group form_inputs col-12" id="checkbox_row">
-               <input type="checkbox" id="aller" name="lift[passengers][][aller]">
+               <input type="checkbox" id="aller" name="passenger[aller]">
                 <label for="aller"><span></span>Aller</label>
                 <p>
-               <input type="checkbox" id="retour" name="lift[passengers][][aller]">
+               <input type="checkbox" id="retour" name="passenger[retour]">
                 <label for="retour"><span></span>Retour</label>
                 <p>
             </div>
