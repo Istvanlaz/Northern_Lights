@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-
-  def home
+  def index
+    @lifts = Lift.all
   end
 end

@@ -8,6 +8,7 @@
 
 puts 'Cleaning database...'
 
+Passenger.destroy_all
 Lift.destroy_all
 
 puts 'Creating awesome lifts...'
@@ -16,7 +17,7 @@ puts 'Creating awesome lifts...'
 lift_1 = Lift.create!({
   first_name: "Emmanuel",
   family_name: "Pirlot de Corbion",
-  places_available: 4,
+  places_available: 6,
   contact: "0476 72 73 74",
   rallying_point: "Rond Point de Montgommery",
   departure: Time.strptime('11/22/2020 20:15', '%m/%d/%Y %H:%M'),
@@ -35,7 +36,7 @@ lift_2 = Lift.create!({
 lift_3 = Lift.create!({
   first_name: "Jacques",
   family_name: "Bonsergent",
-  places_available: 2,
+  places_available: 4,
   contact: "0477 83 73 02",
   rallying_point: "Métro Louise",
   departure: Time.strptime('11/22/2020 20:00', '%m/%d/%Y %H:%M')
@@ -51,7 +52,87 @@ lift_4 = Lift.create!({
   return: Time.strptime('11/22/2020 01:45', '%m/%d/%Y %H:%M')
 })
 
-p "Created #{Lift.count} lifts"
+puts "Created #{Lift.count} lifts"
+
+
+
+puts 'Creating awesome passengers...'
+
+
+passenger_1 = Passenger.create!({
+  first_name: "Bob",
+  family_name: "Mbappe",
+  places: 1,
+  contact: "0476 72 73 74",
+  lift_id: lift_1.id
+})
+
+passenger_2 = Passenger.create!({
+  first_name: "Bobette",
+  family_name: "Neymar",
+  places: 1,
+  contact: "henry.dp@gmail.com",
+  lift_id: lift_1.id
+})
+
+passenger_3 = Passenger.create!({
+  first_name: "Richard",
+  family_name: "Pauletta",
+  places: 2,
+  contact: "0477 83 73 02",
+  lift_id: lift_2.id
+})
+
+passenger_4 = Passenger.create!({
+  first_name: "Georges",
+  family_name: "Di Maria",
+  places: 1,
+  contact: "0467 73 92 01",
+  lift_id: lift_3.id
+})
+
+passenger_5 = Passenger.create!({
+  first_name: "Paolo",
+  family_name: "Kimpembe",
+  places: 1,
+  contact: "0467 73 92 01",
+  lift_id: lift_1.id
+})
+
+passenger_6 = Passenger.create!({
+  first_name: "Edinson",
+  family_name: "Cavani",
+  places: 1,
+  contact: "0467 73 92 01",
+  lift_id: lift_2.id
+})
+
+passenger_7 = Passenger.create!({
+  first_name: "Julien",
+  family_name: "Pastore",
+  places: 1,
+  contact: "0467 73 92 01",
+  lift_id: lift_1.id
+})
+
+passenger_8 = Passenger.create!({
+  first_name: "Alice",
+  family_name: "Javier",
+  places: 1,
+  contact: "0467 73 92 01",
+  lift_id: lift_3.id
+})
+
+passenger_9 = Passenger.create!({
+  first_name: "Arthur",
+  family_name: "Ravioli",
+  places: 1,
+  contact: "0467 73 92 01",
+  lift_id: lift_4.id
+})
+
+
+puts "Created #{Passenger.count} passengers"
 
 
 
