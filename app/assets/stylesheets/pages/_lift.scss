@@ -245,7 +245,8 @@
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
   &:hover {
-    background-color: grey;
+    background-color: #019633;
+    cursor: pointer;
   }
 }
 
@@ -253,6 +254,15 @@
   color: inherit;
   font-weight: bold;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  height: 6vh;
+  width: 11vw;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  position: absolute;
   &:hover {
     text-decoration: none;
 
