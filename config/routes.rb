@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
   root to: 'landings#index'
+  get 'lift_index', to: 'lifts#lift_index'
   resources :landings, only: [:index, :show], as: :accueil
   resources :repondre, only: [:index], as: :repondre
-  resources :pages, only: [:index], as: :pages
+  resources :pages, only: [:index, :show], as: :pages
   resources :lifts do
-    resources :passengers, only: [:index, :new, :edit, :create]
+    resources :passengers, only: [:index, :new, :show, :create]
   end
   resources :dress_codes, only: [:index], as: :dress_code
   resources :photos, only: [:index], as: :photos

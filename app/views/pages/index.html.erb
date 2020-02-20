@@ -2,12 +2,17 @@
   <div class="lift-bg">
     <%= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
   </div>
-  <div class="lift-subcont">
-    <div class="bob-card">
-      <h2><%= link_to "Je propose un Lift! 🥛", new_lift_path %></h2>
+  <div class="lift-cont-home">
+    <div class="lift-subcont">
+      <div class="bob-card">
+        <h2><%= link_to "Je propose un Lift! 🥛", new_lift_path %></h2>
+      </div>
+      <div class="bob-card">
+        <h2><%= link_to "Je cherche un Lift! 🍸", lifts_path %></h2>
+      </div>
     </div>
-    <div class="bob-card">
-      <h2><%= link_to "Je cherche un Lift! 🍸", lifts_path %></h2>
+    <div class="btn-lift-new">
+      <%= link_to "JE SUIS DÉJÀ UN LIFT!", lift_index_path %>
     </div>
   </div>
 </div>

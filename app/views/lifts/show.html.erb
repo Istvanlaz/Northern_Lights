@@ -1,3 +1,31 @@
-<div class="bob-new">
-  <h1>Hello World!!</h1>
+<div class="passenger-cont">
+  <div class="passenger-bg">
+    <%= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
+  </div>
+  <div class="passenger-view">
+    <h1>Hello <%= @lift.first_name %>!!</h1>
+    <br>
+    <h3>Tu as actuellement <strong><%= @lift.passengers.count %></strong> passager(s) pour le grand soir!</h3>
+    <br>
+    <h4>Ceux-ci sont:</h4>
+
+    <div class="passenger-show">
+      <% @lift.passengers.each do |passenger|  %>
+        <div class="passenger-card">
+          <div class="passenger-name">
+            <strong><em><%= passenger.first_name %> <%= passenger.family_name %></em></strong>
+          </div>
+          <div class="passenger-contact">
+            Contact: <%= passenger.contact %>
+          </div>
+          <div class="passenger-places">
+            Ce passager prendra: <%= passenger.places %> place(s)
+          </div>
+          <div class="passenger-trip">
+            Aller:<%= passenger.aller? %> - Retour:<%= passenger.retour? %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>

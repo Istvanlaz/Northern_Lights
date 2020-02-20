@@ -8,3 +8,32 @@
     // opacity: 50%;
   }
 }
+
+.btn-lift-new {
+  color: #e2e2e2;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 32px;
+  width: 300px;
+  margin: 32px;
+  border: solid rgba(215,215,215,0.7) 1.2px;;
+  border-radius: 5px;
+  z-index: 3000;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(215,215,215,0.2);
+    // opacity: 50%;
+  }
+}
+
+.btn-lift-new a {
+  text-decoration: none;
+  color: #e2e2e2;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
