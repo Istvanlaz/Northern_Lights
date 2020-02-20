@@ -365,7 +365,7 @@
   }
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 850px) {
   .invit-cont {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.7em;
@@ -373,7 +373,7 @@
   }
 
   .invitation-img img {
-    height: 142vh;
+    height: 170vh;
   }
 
   .invit-txt-top-left {
@@ -411,13 +411,13 @@
   .invit-bottom-left {
     top: 162vh;
     width: 50vw;
-    height: 18vh;
+    height: 20vh;
   }
 
   .invit-bottom-right {
     top: 162vh;
     width: 50vw;
-    height: 18vh;
+    height: 20vh;
   }
 
   .invit-bottom-centre {
@@ -425,11 +425,11 @@
     left: 0px;
     width: 100vw;
     height: 16vh;
-    top: 175vh;
+    top: 182vh;
   }
 
   .invit-groups {
-    top: 189vh;
+    top: 200vh;
   }
 
   .localisation-map {
@@ -438,12 +438,12 @@
 
   .localisation-text {
     width: 100vw;
-    top: 197vh;
-    height: 23vh;
+    top: 206vh;
+    height: 48vh;
   }
 
   .response-cont {
-    top: 219vh;
+    top: 255vh;
   }
 
   .response-cont a {
@@ -451,7 +451,7 @@
   }
 
   .footer-land {
-    top: 230vh;
+    top: 270vh;
   }
 
 }
@@ -465,7 +465,7 @@
   }
 
   .response-cont {
-    top: 220vh;
+    top: 250vh;
   }
 
 }

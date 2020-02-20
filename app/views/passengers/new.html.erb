@@ -2,6 +2,11 @@
   <div class="lift-bg">
     <%= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
   </div>
+  <% array = [0] %>
+    <% @lift.passengers.each do |passenger| %>
+      <% array << passenger.places %>
+    <% end %>
+  <% places_used = array.inject(0){|sum, pl| sum + pl } %>
   <div class="lift-subcont">
     <div class="bob-new">
       <div class="container">
@@ -23,7 +28,7 @@
           <div class="form-row">
             <div class="form-group form_inputs col-sm-6">
               <label for="places">NOMBRE DE PLACES *</label>
-              <select class="form-control" id="passenger_places" name="passenger[places]">
+              <select class="form-control" id="passenger_places" name="passenger[places]" maxlength="<%= @lift.places_available - places_used %>">
                 <option><%= 1 %></option>
                 <option><%= 2 %></option>
                 <option><%= 3 %></option>
