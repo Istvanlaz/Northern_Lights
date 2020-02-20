@@ -13,6 +13,16 @@
   object-fit: cover;
 }
 
+.lift-cont-home {
+  position: absolute;
+  top: 0;
+  height: 78vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
 .lift-subcont {
   position: absolute;
   top: 0;
@@ -295,9 +305,6 @@
   cursor: no-drop;
 }
 
-.required {
-  background-color: red;
-}
 
 // Tryouts --
 
@@ -405,10 +412,37 @@ label[for=no] {
 
 
 @media screen and (max-width: 1020px) {
+  .lift-cont {
+    height: 100vh;
+  }
+
+  .lift-bg img {
+    height: 92vh;
+  }
+
+  .list-cont-empty {
+    position: absolute;
+    height: 92vh;
+  }
+
   .list-cont{
     overflow-x: scroll;
     overflow-y: scroll;
     white-space: nowrap;
+    align-items: unset;
+    justify-content: unset;
+    padding: 32px;
+    right: 16px;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .list-cont-big {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    // white-space: nowrap;
     align-items: unset;
     justify-content: unset;
     padding: 32px;
@@ -518,6 +552,13 @@ label[for=no] {
 
   .form-row {
     font-size: 0.9em;
+  }
+
+  .btn-lift-new {
+    margin: 16px;
+    // position: absolute;
+    // bottom: 0;
+    // right: 50%;
   }
 }
 

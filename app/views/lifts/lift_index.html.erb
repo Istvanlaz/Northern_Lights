@@ -1,5 +1,3 @@
-<!--  TODO:  <div class="table-responsive"></div> -->
-
 <div class="lift-cont">
   <div class="lift-bg">
     <%= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
@@ -8,7 +6,7 @@
   <% if @lifts.count == 0 %>
     <div class="list-cont-empty">
       <div class="lift_title_empty effect3d">
-        <strong>DÉSOLÉ, NOUS N'AVONS PAS ENCORE DE SUPER-MARIOS DISPONIBLES POUR L'INSTANT..</strong>
+        <strong>NOUS N'AVONS PAS ENCORE DE SUPER-MARIOS, EST-TU SUR DE DÉJÀ ÊTRE UN DE NOS CHERS LIFTS..?</strong>
       </div>
       <div class="empty_list">
         <%= image_tag("lifts/super-mario-sans-fond.png", alt: "A sky full of Stars") %>
@@ -26,7 +24,7 @@
           <strong>NOS SUPER-MARIOS!  🍄 🌟</strong>
         </div>
         <div class="lift_subtitle">
-          <small>Tu n'as qu'à sélectionner directement celui qui te convient le mieux ;)</small>
+          <small>Lequel de nos Super-Mario es-tu?</small>
         </div>
       </div>
       <div class="table_cont">
@@ -56,7 +54,7 @@
           </div>
 
           <div class="lists_header" id="ticking_box_header">
-            <strong>JE RÉSERVE!</strong>
+            <strong>LEQUEL ES-TU?</strong>
           </div>
         </div>
 
@@ -95,21 +93,11 @@
               <%= lift.contact %>
             </div>
 
-            <% if places_used == lift.places_available %>
-              <div class="lists_header" id="ticking_box_full">
-                <strong>FULL</strong>
-              </div>
-            <% else %>
-              <div class="lists_header" id="ticking_box_valid">
-
-                <%= link_to "GO!", new_lift_passenger_path(lift) %>
-              </div>
-            <% end %>
+            <div class="lists_header" id="ticking_box_valid">
+              <%= link_to "#{lift.first_name}!", lift_path(lift) %>
+            </div>
           </div>
         <% end %>
-        <div class="lists_header">
-            <strong>JE RÉSERVE!</strong>
-          </div>
       </div>
     </div>
 
@@ -120,7 +108,7 @@
           <strong>NOS SUPER-MARIOS!  🍄 🌟</strong>
         </div>
         <div class="lift_subtitle">
-          <small>Sélectionne directement celui que tu préfères! <br> Nous vous mettrons en contact</small>
+          <small>Lequel de nos Super-Mario es-tu?</small>
         </div>
       </div>
       <div class="table_cont">

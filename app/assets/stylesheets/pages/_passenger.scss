@@ -1,3 +1,45 @@
+.passenger-cont {
+  position: relative;
+  top: 8vh;
+  height: 89vh;
+  width: 100vw;
+  bottom: 90px;
+  overflow: scroll;
+  color: white;
+}
+
+.passenger-bg img {
+  height: 124vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.passenger-view {
+  position: absolute;
+  top: 0;
+  padding: 50px;
+}
+
+.passenger-show {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 32px;
+  margin: 32px;
+}
+
+.passenger-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40vh;
+  width: 27vw;
+  padding: 16px;
+  border: solid rgba(215,215,215,0.7) 1.2px;;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px #FFFFFF;
+}
+
 #checkbox_row {
   display: flex;
   display: flex;
