@@ -492,10 +492,15 @@ label[for=no] {
     height: 16vh;
     width: 90vw;
     padding-top: 8px;
+    text-align: center;
   }
 
   .lift_title {
     font-size: 1.3em;
+  }
+
+  .lift_subtitle {
+    line-height: 24px;
   }
 
   .table_cont {

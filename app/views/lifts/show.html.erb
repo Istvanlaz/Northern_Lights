@@ -5,14 +5,14 @@
   <div class="passenger-view">
     <div class="full_title_lift">
       <div class="lift_title effect3d">
-        <h1><strong>Voici la page d'info de <%= @lift.first_name %>!!</strong></h1>
+        <strong>Voici la page d'info de <%= @lift.first_name %>!!</strong>
       </div>
       <br>
       <div class="lift_subtitle">
-        <h4>Il y a actuellement <strong><%= @lift.passengers.count %></strong> passager(s) avec <%= @lift.first_name %> pour le grand soir!</h4>
+        Il y a actuellement <strong><%= @lift.passengers.count %></strong> passager(s) avec <%= @lift.first_name %> pour le grand soir!
       </div>
     </div>
-
+    <!-- <div class="container"></div> -->
     <div class="passenger-show">
       <% @lift.passengers.each do |passenger|  %>
         <div class="passenger-card">
@@ -52,12 +52,6 @@
     </div>
     <div class="btn-lift-new">
       <%= link_to "Back", lift_index_path %>
-    </div>
-  </div>
-  <div class="footer-cont">
-    <div class="footer-passenger">
-      Copyright © 2020 István Lázár & Gauthier Wolters <br>
-      All rights reserved.
     </div>
   </div>
 </div>
