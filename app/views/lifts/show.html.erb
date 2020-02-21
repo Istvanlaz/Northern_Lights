@@ -5,15 +5,13 @@
   <div class="passenger-view">
     <div class="full_title_lift">
       <div class="lift_title effect3d">
-        <h1><strong>Voici la page d'info de <%= @lift.first_name %>!!</strong></h1>
+        <h1><strong>Voici la page d'info de <%= @lift.first_name %> <%= @lift.family_name.split("").first %>!!</strong></h1>
       </div>
       <br>
       <div class="lift_subtitle">
         <h4>Il y a actuellement <strong><%= @lift.passengers.count %></strong> passager(s) avec <%= @lift.first_name %> pour le grand soir!</h4>
       </div>
     </div>
-    <br>
-    <h5>Ceux-ci sont:</h5>
 
     <div class="passenger-show">
       <% @lift.passengers.each do |passenger|  %>
@@ -21,17 +19,23 @@
           <div class="passenger-name">
             <h4><u><strong><em><%= passenger.first_name %> <%= passenger.family_name %></em></strong></u></h4>
           </div>
+
           <div class="passenger-contact">
             Contact: <u><%= passenger.contact %></u>
           </div>
+
           <div class="passenger-places">
             Ce passager prendra: <strong><em><%= passenger.places %> place(s)</em></strong>
           </div>
+
           <div class="passenger-trip">
             Aller:<%= passenger.aller? %> - Retour:<%= passenger.retour? %>
           </div>
         </div>
       <% end %>
+    </div>
+    <div class="btn-lift-new">
+      <%= link_to "Back", lift_index_path %>
     </div>
   </div>
 </div>

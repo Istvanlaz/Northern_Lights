@@ -18,7 +18,7 @@
   text-align: center;
   height: 32px;
   width: 300px;
-  margin: 32px;
+  margin: 20px;
   border: solid rgba(215,215,215,0.7) 1.2px;;
   border-radius: 5px;
   z-index: 3000;
@@ -32,8 +32,22 @@
 .btn-lift-new a {
   text-decoration: none;
   color: #e2e2e2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .btn-lift-new {
+    position: sticky;
+    margin: 16px;
+    left: 0;
+    width: 90vw;
   }
 }
 

@@ -34,6 +34,17 @@
   align-items: center;
 }
 
+.lift-subcont-home {
+  position: absolute;
+  top: 0;
+  height: 81vh;
+  width: 100%;
+  // background: blue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .bob-card {
   background-color: white;
   display: flex;
@@ -166,6 +177,13 @@
   object-fit: cover;
   height: 40vh;
   width: 40vh;
+}
+
+.table_cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .lift_table {
@@ -431,6 +449,7 @@ label[for=no] {
     white-space: nowrap;
     align-items: unset;
     justify-content: unset;
+    height: 100vh;
     padding: 32px;
     right: 16px;
     -webkit-overflow-scrolling: touch;
@@ -442,9 +461,10 @@ label[for=no] {
   .list-cont-big {
     overflow-x: scroll;
     overflow-y: scroll;
-    // white-space: nowrap;
+    white-space: nowrap;
     align-items: unset;
     justify-content: unset;
+    height: 100vh;
     padding: 32px;
     right: 16px;
     -webkit-overflow-scrolling: touch;
@@ -457,6 +477,13 @@ label[for=no] {
     height: 18vh;
     width: 90vw;
     font-size: 1em;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  .empty_list img {
+    height: 35vh;
+    width: 35vh;
   }
 
   .full_title_lift {
@@ -483,6 +510,22 @@ label[for=no] {
     flex: 0 0 auto;
   }
 
+  .lift-cont-home {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .lift-subcont-home {
+    position: relative;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .lift-subcont {
     flex-direction: column;
     justify-content: center;
@@ -490,7 +533,7 @@ label[for=no] {
 
   .bob-card {
     padding: 15px;
-    height: 100px;
+    height: 80px;
     width: 300px;
     border-radius: 25px;
     margin: 25px;
@@ -553,12 +596,14 @@ label[for=no] {
   .form-row {
     font-size: 0.9em;
   }
+}
 
-  .btn-lift-new {
-    margin: 16px;
-    // position: absolute;
-    // bottom: 0;
-    // right: 50%;
+
+@media screen and (max-width: 450px) {
+  .table_cont {
+    align-items: unset;
   }
 }
+
+
 
