@@ -3,23 +3,29 @@
     <%= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
   </div>
   <div class="passenger-view">
-    <h1>Hello <%= @lift.first_name %>!!</h1>
+    <div class="full_title_lift">
+      <div class="lift_title effect3d">
+        <h1><strong>Voici la page d'info de <%= @lift.first_name %>!!</strong></h1>
+      </div>
+      <br>
+      <div class="lift_subtitle">
+        <h4>Il y a actuellement <strong><%= @lift.passengers.count %></strong> passager(s) avec <%= @lift.first_name %> pour le grand soir!</h4>
+      </div>
+    </div>
     <br>
-    <h3>Tu as actuellement <strong><%= @lift.passengers.count %></strong> passager(s) pour le grand soir!</h3>
-    <br>
-    <h4>Ceux-ci sont:</h4>
+    <h5>Ceux-ci sont:</h5>
 
     <div class="passenger-show">
       <% @lift.passengers.each do |passenger|  %>
         <div class="passenger-card">
           <div class="passenger-name">
-            <strong><em><%= passenger.first_name %> <%= passenger.family_name %></em></strong>
+            <h4><u><strong><em><%= passenger.first_name %> <%= passenger.family_name %></em></strong></u></h4>
           </div>
           <div class="passenger-contact">
-            Contact: <%= passenger.contact %>
+            Contact: <u><%= passenger.contact %></u>
           </div>
           <div class="passenger-places">
-            Ce passager prendra: <%= passenger.places %> place(s)
+            Ce passager prendra: <strong><em><%= passenger.places %> place(s)</em></strong>
           </div>
           <div class="passenger-trip">
             Aller:<%= passenger.aller? %> - Retour:<%= passenger.retour? %>

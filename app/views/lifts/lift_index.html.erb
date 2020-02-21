@@ -138,7 +138,7 @@
           </div>
 
           <div class="lists_header" id="ticking_box_header">
-            <strong>JE RÉSERVE!</strong>
+            <strong>LEQUEL ES-TU?</strong>
           </div>
         </div>
 
@@ -177,16 +177,9 @@
               <%= lift.contact %>
             </div>
 
-
-            <% if places_used == lift.places_available %>
-              <div class="lists_header" id="ticking_box_full">
-                <strong>FULL</strong>
-              </div>
-            <% else %>
-              <div class="lists_header" id="ticking_box_valid">
-                <%= link_to "GO!", new_lift_passenger_path(lift) %>
-              </div>
-            <% end %>
+            <div class="lists_header" id="ticking_box_valid">
+              <%= link_to "#{lift.first_name}!", lift_path(lift) %>
+            </div>
           </div>
         <% end %>
       </div>

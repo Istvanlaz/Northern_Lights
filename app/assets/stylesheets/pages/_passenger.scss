@@ -9,7 +9,7 @@
 }
 
 .passenger-bg img {
-  height: 124vh;
+  height: 125vh;
   width: 100vw;
   object-fit: cover;
 }
@@ -38,6 +38,9 @@
   border: solid rgba(215,215,215,0.7) 1.2px;;
   border-radius: 5px;
   box-shadow: 0px 0px 8px #FFFFFF;
+  &:hover {
+    background-color: rgba(215,215,215,0.2);
+  }
 }
 
 #checkbox_row {
