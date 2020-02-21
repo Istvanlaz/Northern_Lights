@@ -5,7 +5,7 @@
   <div class="passenger-view">
     <div class="full_title_lift">
       <div class="lift_title effect3d">
-        <h1><strong>Voici la page d'info de <%= @lift.first_name %> <%= @lift.family_name.split("").first %>!!</strong></h1>
+        <h1><strong>Voici la page d'info de <%= @lift.first_name %>!!</strong></h1>
       </div>
       <br>
       <div class="lift_subtitle">
@@ -29,13 +29,35 @@
           </div>
 
           <div class="passenger-trip">
-            Aller:<%= passenger.aller? %> - Retour:<%= passenger.retour? %>
+            <div class="trip-check">
+              Aller:
+              <% if passenger.aller == true %>
+                <div class="trip-checked"><span></span></div>
+              <% else %>
+                <div class="trip-not-checked"><span></span></div>
+              <% end %>
+            </div>
+
+            <div class="trip-check">
+              Retour:
+              <% if passenger.retour == true %>
+                <div class="trip-checked"><span></span></div>
+              <% else %>
+                <div class="trip-not-checked"><span></span></div>
+              <% end %>
+            </div>
           </div>
         </div>
       <% end %>
     </div>
     <div class="btn-lift-new">
       <%= link_to "Back", lift_index_path %>
+    </div>
+  </div>
+  <div class="footer-cont">
+    <div class="footer-passenger">
+      Copyright © 2020 István Lázár & Gauthier Wolters <br>
+      All rights reserved.
     </div>
   </div>
 </div>
