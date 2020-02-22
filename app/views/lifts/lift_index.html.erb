@@ -11,8 +11,13 @@
       <div class="empty_list">
         <%= image_tag("lifts/super-mario-sans-fond.png", alt: "A sky full of Stars") %>
       </div>
-      <div class="btn-lift-new">
-        <%= link_to "JE PROPOSE UN LIFT!", new_lift_path %>
+      <div class="bottom-empty-btns">
+        <div class="btn-lift-new">
+          <%= link_to "JE PROPOSE UN LIFT!", new_lift_path %>
+        </div>
+        <div class="btn-lift-new">
+          <%= link_to "Back", pages_path %>
+        </div>
       </div>
     </div>
 
@@ -98,6 +103,9 @@
             </div>
           </div>
         <% end %>
+        <div class="btn-lift-new">
+          <%= link_to "Back", pages_path %>
+        </div>
       </div>
     </div>
 
@@ -182,6 +190,9 @@
             </div>
           </div>
         <% end %>
+      <div class="btn-lift-new">
+        <%= link_to "Back", pages_path %>
+      </div>
       </div>
     </div>
   <% end %>
