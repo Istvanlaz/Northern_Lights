@@ -12,7 +12,7 @@
             <div class="form-group form_inputs col-sm-6">
               <label for="first_name">PRÉNOM *</label>
               <input type="text" name="lift[first_name]" class="form-control form-control-lg"
-                     id="first_name" placeholder="Étienne" required>
+                     id="first_name" placeholder="Étienne" autofocus="true" required>
             </div>
             <div class="form-group form_inputs col-sm-6">
               <label for="family_name">NOM DE FAMILLE *</label>
@@ -30,7 +30,6 @@
                 <option><%= 4 %></option>
                 <option><%= 5 %></option>
                 <option><%= 6 %></option>
-                <option><%= 7 %></option>
               </select>
             </div>
             <div class="form-group form_inputs col-sm-6">
@@ -43,7 +42,7 @@
             <div class="form-group form_inputs col-12">
               <label for="rallying_point">POINT DE RALLIEMENT *</label>
               <input type="text" name="lift[rallying_point]" class="form-control form-control-lg"
-                     id="rallying_point" placeholder="Rond Point de Montgommery" required>
+                     id="rallying_point" placeholder="Rond Point de Montgommery" maxlength="65" required>
             </div>
           </div>
           <div class="form-row">
@@ -64,7 +63,7 @@
             </div>
           </div>
         </form>
-           <a href="../../lifts" class="btn btn-link">Back</a>
+           <a href="../../pages" class="btn btn-link">Back</a>
       </div>
     </div>
   </div>

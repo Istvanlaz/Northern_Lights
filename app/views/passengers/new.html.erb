@@ -1,0 +1,66 @@
+<div class="lift-cont">
+  <div class="lift-bg">
+    <%= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
+  </div>
+  <% array = [0] %>
+    <% @lift.passengers.each do |passenger| %>
+      <% array << passenger.places %>
+    <% end %>
+  <% places_used = array.inject(0){|sum, pl| sum + pl } %>
+  <div class="lift-subcont">
+    <div class="bob-new">
+      <div class="container">
+        <h5><strong>ON THE ROAD AGAIN ! <br> MERCI !</strong></h5>
+        <form action="/lifts/<%= @lift.id %>/passengers" method="post">
+          <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+          <div class="form-row">
+            <div class="form-group form_inputs col-sm-6">
+              <label for="first_name">PRÉNOM *</label>
+              <input type="text" name="passenger[first_name]" class="form-control form-control-lg"
+                     id="passenger_first_name" placeholder="Étienne" autofocus="true" required>
+            </div>
+            <div class="form-group form_inputs col-sm-6">
+              <label for="family_name">NOM DE FAMILLE *</label>
+              <input type="text" name="passenger[family_name]" class="form-control form-control-lg"
+                     id="passenger_family_name" placeholder="de Crécy" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group form_inputs col-sm-6">
+              <label for="places">NOMBRE DE PLACES *</label>
+              <select class="form-control" id="passenger_places" name="passenger[places]" required>
+                <% x = 0 %>
+                <% while x < @lift.places_available - places_used %>
+                  <option><%= x = x + 1 %></option>
+                <% end %>
+              </select>
+            </div>
+            <div class="form-group form_inputs col-sm-6">
+              <label for="contact">CONTACT *</label>
+              <input type="text" name="passenger[contact]" class="form-control form-control-lg"
+                     id="passenger_contact" placeholder="email or phone" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group form_inputs col-12" id="checkbox_row">
+               <input type="checkbox" id="aller" name="passenger[aller]">
+                <label for="aller"><span></span>Aller</label>
+                <p>
+               <input type="checkbox" id="retour" name="passenger[retour]">
+                <label for="retour"><span></span>Retour</label>
+                <p>
+            </div>
+          </div>
+          <div class="form-row mt-3">
+            <div class="col-12">
+              <button type="submit" class="btn btn-lift">ENVOYER</button>
+            </div>
+          </div>
+        </form>
+           <a href="/lifts" class="btn btn-link">Back</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+

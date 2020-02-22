@@ -3,13 +3,12 @@ class LiftsController < ApplicationController
     @lifts = Lift.all
   end
 
+  def lift_index
+    @lifts = Lift.all
+  end
+
   def show
-    if @lifts.nil?
-      @lifts = Lift.all
-    else
-      @lifts = Lift.all
-      @lift = Lift.find(params[:id])
-    end
+    @lift = Lift.find(params[:id])
   end
 
   def new

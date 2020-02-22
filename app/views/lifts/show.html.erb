@@ -1,185 +1,57 @@
-<!--  TODO:  <div class="table-responsive"></div> -->
-
- <div class="lift-cont">
-  <div class="lift-bg">
+<div class="passenger-cont">
+  <div class="passenger-bg">
     <%= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
   </div>
-
-  <% if @lifts.count == 0 %>
-    <div class="list-cont">
-      <div class="lift_title_empty effect3d">
-        <strong>DÉSOLÉ, NOUS N'AVONS PAS ENCORE DE SUPER-MARIOS DISPONIBLES POUR L'INSTANT..</strong>
+  <div class="passenger-view">
+    <div class="full_title_lift">
+      <div class="lift_title effect3d">
+        <strong>Voici la page d'info de <%= @lift.first_name %>!</strong>
       </div>
-      <div class="empty_list">
-        <%= image_tag("lifts/super-mario-sans-fond.png", alt: "A sky full of Stars") %>
+      <br>
+      <div class="lift_subtitle">
+        Il y a actuellement <strong><%= @lift.passengers.count %></strong> passager(s) avec <%= @lift.first_name %> pour le grand soir!
       </div>
     </div>
-
-  <% elsif @lifts.count >= 11 %>
-
-    <div class="list-cont-big">
-      <div class="lift_title effect3d">
-        <strong>NOS SUPER-MARIOS!  🍄 🌟</strong>
-      </div>
-      <div class="lift_subtitle">
-        <small>Tu n'as qu'à sélectionner directement celui qui te convient le mieux ;)</small>
-      </div>
-      <div class="lift_table">
-        <div class="lists_header" id="name_header">
-          <strong>NOM</strong>
-        </div>
-
-        <div class="lists_header" id="rallying_header">
-          <strong>POINT DE RALLIEMENT</strong>
-        </div>
-
-        <div class="lists_header" id="departure_header">
-          <strong>HEURE DE<br>DÉPART</strong>
-        </div>
-
-        <div class="lists_header" id="return_header">
-          <strong>HEURE DE<br>RETOUR</strong>
-        </div>
-
-        <div class="lists_header" id="places_header">
-          <strong>NOMBRE<br>DE PLACES</strong>
-        </div>
-
-        <div class="lists_header" id="contact_header">
-          <strong>CONTACT</strong>
-        </div>
-
-        <div class="lists_header" id="ticking_box">
-          <i class="fas fa-check"></i>
-        </div>
-      </div>
-
-      <% @lifts.each do |item| %>
-        <div class="lift_table">
-          <div class="lists_header" id="name_header">
-            <%= item.first_name %> <%= item.family_name %>
+    <!-- <div class="container"></div> -->
+    <div class="passenger-show">
+      <% @lift.passengers.each do |passenger|  %>
+        <div class="passenger-card">
+          <div class="passenger-name">
+            <h4><u><strong><em><%= passenger.first_name %> <%= passenger.family_name %></em></strong></u></h4>
           </div>
 
-          <div class="lists_header" id="rallying_header">
-            <%= item.rallying_point %>
+          <div class="passenger-contact">
+            Contact: <u><%= passenger.contact %></u>
           </div>
 
-          <div class="lists_header" id="departure_header">
-            <%= item.departure.strftime('%H:%M') %>
+          <div class="passenger-places">
+            Ce passager prendra: <strong><em><%= passenger.places %> place(s)</em></strong>
           </div>
 
-          <div class="lists_header" id="return_header">
-            <% if item.return.nil? %>
-              N/A
-            <% else %>
-              <%= item.return.strftime('%H:%M') %>
-            <% end %>
-          </div>
+          <div class="passenger-trip">
+            <div class="trip-check">
+              Aller:
+              <% if passenger.aller == true %>
+                <div class="trip-checked"><span></span></div>
+              <% else %>
+                <div class="trip-not-checked"><span></span></div>
+              <% end %>
+            </div>
 
-          <div class="lists_header" id="places_header">
-            <%= item.places_available %>
-          </div>
-
-          <div class="lists_header" id="contact_header">
-            <%= item.contact %>
-          </div>
-
-          <div class="lists_header" id="ticking_box">
-            <i class="fas fa-check"></i>
+            <div class="trip-check">
+              Retour:
+              <% if passenger.retour == true %>
+                <div class="trip-checked"><span></span></div>
+              <% else %>
+                <div class="trip-not-checked"><span></span></div>
+              <% end %>
+            </div>
           </div>
         </div>
       <% end %>
     </div>
-
-  <% else %>
-    <div class="list-cont">
-      <div class="lift_title effect3d">
-        <strong>NOS SUPER-MARIOS!  🍄 🌟</strong>
-      </div>
-      <div class="lift_subtitle">
-        <small>Sélectionne directement celui que tu préfères! <br> Nous vous mettrons en contact</small>
-      </div>
-      <div class="lift_table">
-        <div class="lists_header" id="name_header">
-          <strong>NOM</strong>
-        </div>
-
-        <div class="lists_header" id="rallying_header">
-          <strong>POINT DE RALLIEMENT</strong>
-        </div>
-
-        <div class="lists_header" id="departure_header">
-          <strong>HEURE DE<br>DÉPART</strong>
-        </div>
-
-        <div class="lists_header" id="return_header">
-          <strong>HEURE DE<br>RETOUR</strong>
-        </div>
-
-        <div class="lists_header" id="places_header">
-          <strong>NOMBRE<br>DE PLACES</strong>
-        </div>
-
-        <div class="lists_header" id="contact_header">
-          <strong>CONTACT</strong>
-        </div>
-
-        <div class="lists_header" id="ticking_box">
-          <i class="fas fa-check"></i>
-        </div>
-      </div>
-
-      <% @lifts.each do |item| %>
-        <div class="lift_table">
-          <div class="lists_header" id="name_header">
-            <%= item.first_name %> <%= item.family_name %>
-          </div>
-
-          <div class="lists_header" id="rallying_header">
-            <%= item.rallying_point %>
-          </div>
-
-          <div class="lists_header" id="departure_header">
-            <%= item.departure.strftime('%H:%M') %>
-          </div>
-
-          <div class="lists_header" id="return_header">
-            <% if item.return.nil? %>
-              N/A
-            <% else %>
-              <%= item.return.strftime('%H:%M') %>
-            <% end %>
-          </div>
-
-          <div class="lists_header" id="places_header">
-            <%= item.places_available %>
-          </div>
-
-          <div class="lists_header" id="contact_header">
-            <%= item.contact %>
-          </div>
-
-          <div class="lists_header" id="ticking_box">
-            <%= link_to "V", edit_lift_path %>
-          </div>
-
-            <!-- <form action="">
-              <input type="radio" name="rdo" id="yes" checked />
-              <input type="radio" name="rdo" id="no"/>
-              <div class="switch">
-                <label for="yes">Yes</label>
-                <label for="no">No</label>
-                <span></span>
-              </div>
-            </form> -->
-
-          <!-- <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div> -->
-        </div>
-      <% end %>
+    <div class="btn-lift-new" id="btn-passenger">
+      <%= link_to "Back", lift_index_path %>
     </div>
-  <% end %>
+  </div>
 </div>

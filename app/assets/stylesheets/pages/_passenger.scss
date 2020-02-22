@@ -1,0 +1,189 @@
+.passenger-cont {
+  position: relative;
+  top: 8vh;
+  // height: 100vh;
+  width: 100vw;
+  bottom: 90px;
+  // overflow: scroll;
+  color: white;
+}
+
+.passenger-bg {
+  position: absolute;
+  top: 0;
+  height: 95%;
+}
+
+.passenger-bg img {
+  height: 100%;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.passenger-view {
+  position: relative;
+  top: 0;
+  width: 100vw;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.passenger-show {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 7vw;
+  margin: 54px auto;
+}
+
+.passenger-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(215,215,215,0.2);
+  height: 24vw;
+  width: 24vw;
+  padding: 16px;
+  border: solid rgba(215,215,215,0.7) 1.2px;;
+  border-radius: 25px;
+  box-shadow: 0px 0px 8px #FFFFFF;
+  // &:hover {
+  //   background-color: rgba(215,215,215,0.2);
+  // }
+}
+
+.passenger-trip {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly
+}
+
+.trip-checked {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
+}
+
+.trip-not-checked {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat;
+}
+
+#checkbox_row {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    color: inherit;
+}
+
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -2px 10px 0 0;
+    vertical-align: middle;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
+}
+
+
+@media screen and (max-width: 1020px) {
+  .passenger-bg {
+    height: 95%;
+  }
+
+  .passenger-view {
+    top: 0;
+    height: 100%;
+    justify-content: unset;
+    padding: 32px;
+  }
+
+  .passenger-show {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12vw;
+    margin: 54px auto;
+  }
+
+  .passenger-card {
+    height: 30vw;
+    width: 30vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .passenger-bg {
+    height: 100%;
+  }
+
+  .passenger-card {
+    height: 30vw;
+    width: 30vw;
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  .passenger-name h4 {
+    font-size: 1em;
+  }
+
+  .passenger-contact{
+    font-size: 0.8em;
+  }
+
+  .passenger-places{
+    font-size: 0.8em;
+  }
+
+  .passenger-trip{
+    font-size: 0.8em;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .passenger-bg {
+    height: 98%;
+  }
+
+  .passenger-show {
+    grid-template-columns: 1fr;
+    grid-gap: 12vw;
+    margin: 54px auto;
+  }
+
+  .passenger-card {
+    height: 74vw;
+    width: 74vw;
+    text-align: center;
+  }
+}
+
+
+
+
+
