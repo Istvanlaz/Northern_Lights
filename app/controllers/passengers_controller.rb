@@ -17,7 +17,7 @@ class PassengersController < ApplicationController
     @passenger = Passenger.new(passenger_params)
     @passenger.lift = @lift
     if @passenger.save
-      redirect_to lifts_path
+      redirect_to lifts_path, notice: "Votre trajet à bien été enregistré, vous serez mis en contact avec le Bob de votre choix."
     else
       render :new
     end
