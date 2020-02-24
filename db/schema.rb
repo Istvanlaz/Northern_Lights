@@ -50,8 +50,6 @@ ActiveRecord::Schema.define(version: 2020_02_18_155522) do
     t.index ["lift_id"], name: "index_passengers_on_lift_id"
   end
 
-<<<<<<< HEAD
-=======
   create_table "photos", force: :cascade do |t|
     t.string "image"
     t.datetime "created_at", null: false
@@ -59,5 +57,4 @@ ActiveRecord::Schema.define(version: 2020_02_18_155522) do
   end
 
   add_foreign_key "passengers", "lifts"
->>>>>>> 78493c8d6105f13d559d19b82c331dc91ccfb7fc
 end
