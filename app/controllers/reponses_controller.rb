@@ -15,6 +15,6 @@ class ReponsesController < ApplicationController
   private
 
   def reponse_params
-    params.require(:reponse).permit(:first_name, :family_name, :contact, :vegetarian, :message)
+    params.require(:reponse).permit(:first_name, :family_name, :contact, :vegetarian, :participation, :message)
   end
 end

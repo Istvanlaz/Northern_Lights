@@ -1,11 +1,13 @@
-<div class="reponse-cont">
-  <div class="reponse-bg">
+<div class="lift-cont">
+  <div class="lift-bg">
     <%= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
   </div>
-  <div class="reponse-subcont">
-    <div class="reponse-new">
+  <div class="lift-subcont">
+    <div class="bob-new" id="remerciement-new">
       <div class="container">
         <h5><strong>REMERCIEMENTS</strong></h5>
+        <small>Votre message sera envoyé par mail <br> aux organisateurs de la soirée.</small>
+        <p>
         <form action="/remerciements" method="post">
           <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
           <div class="form-row">
@@ -24,7 +26,7 @@
           <div class="form-center">
             <div class="form-group form_inputs col-lg-12">
               <label for="message">MESSAGE *</label>
-              <textarea class="form-control" id="message-remerciement" name="remerciement[message]"  rows="10" placeholder="Un message serait fortment apprécié." required></textarea>
+              <textarea class="form-control" id="message-remerciement" name="remerciement[message]"  rows="8" placeholder="Un message serait fortement apprécié." required></textarea>
             </div>
           </div>
           <div class="form-row mt-3">

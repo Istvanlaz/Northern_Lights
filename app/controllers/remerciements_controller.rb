@@ -6,7 +6,7 @@ class RemerciementsController < ApplicationController
   def create
     @remerciement = Remerciement.new(remerciement_params)
     if @remerciement.save
-      redirect_to accueil_index_path, notice: "Votre remerciement à bien été enregistrée."
+      redirect_to accueil_index_path, notice: "Votre remerciement à bien été enregistré."
     else
       render :new
     end

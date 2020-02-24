@@ -1,11 +1,13 @@
-<div class="reponse-cont">
-  <div class="reponse-bg">
+<div class="lift-cont">
+  <div class="lift-bg">
     <%= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
   </div>
-  <div class="reponse-subcont">
-    <div class="reponse-new">
+  <div class="lift-subcont">
+    <div class="bob-new" id="reponse-new">
       <div class="container">
         <h5><strong>RÉPONSE</strong></h5>
+        <small>Votre réponse sera envoyée par mail <br> aux organisateurs de la soirée.</small>
+        <p>
         <form action="/reponses" method="post">
           <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
           <div class="form-row">
@@ -21,10 +23,12 @@
             </div>
           </div>
           <div class="form-row">
-            <div class="form-group form_inputs col-lg-12">
-              <label for="contact">CONTACT *</label>
-              <input type="text" name="reponse[contact]" class="form-control form-control-lg"
-                     id="contact" placeholder="email" required>
+            <div class="form-group form_inputs col-12" id="checkbox_row">
+               <input type="checkbox" id="participation_true" name="reponse[participation]" value="true">
+                <label for="participation_true"><span></span>Je serai présent</label>
+                <p>
+               <input type="checkbox" id="participation_false" name="reponse[participation]" value="false">
+                <label for="participation_false"><span></span>Je ne pourrai pas assister</label>
             </div>
           </div>
           <div class="form-row">
@@ -33,10 +37,17 @@
                 <label for="vegetarian"><span></span>Végétarien(ne)</label>
             </div>
           </div>
+          <div class="form-row">
+            <div class="form-group form_inputs col-lg-12">
+              <label for="contact">CONTACT *</label>
+              <input type="text" name="reponse[contact]" class="form-control form-control-lg"
+                     id="contact" placeholder="email" required>
+            </div>
+          </div>
           <div class="form-center">
             <div class="form-group form_inputs col-lg-12">
               <label for="message">MESSAGE</label>
-              <textarea class="form-control" name="reponse[message]" id="message-reponse" rows="7" placeholder="Un message serait fortment apprécié."></textarea>
+              <textarea class="form-control" name="reponse[message]" id="message-reponse" rows="5" placeholder="Un message serait fortement apprécié."></textarea>
             </div>
           </div>
           <div class="form-row mt-3">
