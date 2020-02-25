@@ -1,14 +1,14 @@
 .lift-cont {
   position: relative;
   top: 8vh;
-  height: 89vh;
+  height: 90vh;
   width: 100vw;
   bottom: 90px;
   overflow: hidden;
 }
 
 .lift-bg img {
-  height: 81vh;
+  height: 82vh;
   width: 100vw;
   object-fit: cover;
 }
@@ -322,111 +322,6 @@
   border-top-right-radius: 25px;
   cursor: no-drop;
 }
-
-
-// Tryouts --
-
-$green: #4cd964;
-$red: #ff3b30;
-$blue: #335d73;
-
-.switch {
-  position: absolute;
-  width: 150px;
-  height: 50px;
-  text-align: center;
-  margin: -30px 0 0 -75px;
-  background: $green;
-  transition: all 0.2s ease;
-  border-radius: 25px;
-  span {
-    position: absolute;
-    width: 20px;
-    height: 4px;
-    top: 50%;
-    left: 50%;
-    margin: -2px 0px 0px -4px;
-    background: white;
-    display: block;
-    transform: rotate(-45deg);
-    transition: all .2s ease;
-    border-radius: 2px;
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 4px;
-      height: 12px;
-      margin-top: -8px;
-      background: white;
-      transition: all .2s ease;
-      border-radius: 2px;
-    }
-  }
-}
-
-// input[type=radio] {
-//   display: none;
-// }
-
-.switch label {
-  cursor: pointer;
-  color: rgba(#000, .2);
-  width: 60px;
-  line-height: 50px;
-  transition: all 0.2s ease;
-}
-
-label[for=yes] {
-  position: absolute;
-  left: 0px;
-  height: 20px;
-}
-
-label[for=no] {
-  position: absolute;
-  right: 0px;
-}
-
-#no:checked ~ .switch {
-    background: $blue;
-}
-
-#no:checked ~ .switch span .bottom_span {
-    background: $red;
-    margin-left: -8px;
-    transform: rotate(-45deg);
-    &:after {
-      background: $green;
-      height: 20px;
-      margin-top: -8px;
-      margin-left: 8px;
-      transform: rotate(-45deg);
-    }
-}
-
- #no:checked ~ .switch span .top_span {
-    background: $red;
-    margin-left: -8px;
-    transform: rotate(-45deg);
-    &:after {
-      background: $green;
-      height: 20px;
-      margin-top: -8px;
-      margin-left: 8px;
-      transform: rotate(-45deg);
-    }
- }
-
-#yes:checked ~ .switch label[for=yes]{
-  color: white;
-}
-
-#no:checked ~ .switch label[for=no]{
-  color: white;
-}
-
-
 
 
 @media screen and (max-width: 1020px) {

@@ -22,7 +22,7 @@ class LiftsController < ApplicationController
   def create
     @lift = Lift.new(lift_params)
     if @lift.save
-      redirect_to lifts_path
+      redirect_to lifts_path, notice: "Votre trajet à bien été enregistré, merci d'avance."
     else
       render :new
     end
