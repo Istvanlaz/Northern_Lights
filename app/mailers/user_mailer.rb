@@ -5,9 +5,9 @@ class UserMailer < ApplicationMailer
   #
   #   en.user_mailer.confirmation.subject
   #
-  def confirmation()
-    @greeting = "Hi"
-
-    mail to: :contact, subject: "Confirmation réponse - Nothern Lights"
+  def confirmation(reponse)
+    # @greeting = "Hi"
+    @reponses = reponse
+    mail to: @reponse.last.contact, subject: "Confirmation réponse - Nothern Lights"
   end
 end
