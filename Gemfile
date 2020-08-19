@@ -15,7 +15,7 @@ gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
-
+gem 'letter_opener', group: :development
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'

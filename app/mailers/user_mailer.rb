@@ -5,9 +5,23 @@ class UserMailer < ApplicationMailer
   #
   #   en.user_mailer.confirmation.subject
   #
-  def confirmation(reponse)
+  def confirmation
     # @greeting = "Hi"
-    @reponses = reponse
-    mail to: @reponse.last.contact, subject: "Confirmation réponse - Nothern Lights"
+    p params
+
+    @reponse = params[:reponse]
+    p @reponse
+    mail to: @reponse.contact, subject: "Confirmation réponse - Nothern Lights"
+  end
+
+  def welcome
+    @user = params[:user] # Instance variable => available in view
+    mail(to: @user.email, subject: 'Welcome to Le Wagon')
+    # This will render a view in `app/views/user_mailer`!
+  end
+
+  def confirmation_participation
+    @reponse = params[:reponse]
+    mail to: @reponse.contact, subject: "Confirmation réponse - Nothern Lights"
   end
 end
