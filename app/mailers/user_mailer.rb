@@ -27,6 +27,16 @@ class UserMailer < ApplicationMailer
 
   def remerciements
     @remerciements = params[:remerciements]
-    mail to: 'organisateurs@gmail.com', subject: "Remerciements"
+    mail to: 'organisateurs@gmail.com', subject: "Remerciements - Nothern Lights"
+  end
+
+  def lifts_conducteur
+    @passanger = params[:passanger]
+    mail to: @passanger.lift.contact, subject: "Un nouveau passager dans ta voiture ! - Nothern Lights"
+  end
+
+  def lifts_passanger
+    @passanger = params[:passanger]
+    mail to: @passanger.contact, subject: "Confirmation réservation lift - Nothern Lights"
   end
 end
