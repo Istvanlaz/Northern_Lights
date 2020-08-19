@@ -24,4 +24,9 @@ class UserMailer < ApplicationMailer
     @reponse = params[:reponse]
     mail to: @reponse.contact, subject: "Confirmation réponse - Nothern Lights"
   end
+
+  def remerciements
+    @remerciements = params[:remerciements]
+    mail to: 'organisateurs@gmail.com', subject: "Remerciements"
+  end
 end
