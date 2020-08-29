@@ -1,0 +1,20 @@
+<p>Bonjour, </p>
+
+<p><%= @reponse.first_name %> <%= @reponse.family_name %>
+  <%if @reponse.participation %>
+  paticipera à la soirée !
+  <%else%>
+  ne participera malheureusement pas à la soirée !
+  <%end%> <br>
+
+  <%if @reponse.vegetarian%>
+  <%= @reponse.first_name %> est végatarien(ne).
+  <%end%>
+  <br>
+  <p>Message de l'invité: </p> <br>
+
+  <%=@reponse.message%>
+
+
+</p>
+

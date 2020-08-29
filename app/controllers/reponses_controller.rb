@@ -1,4 +1,8 @@
-class ReponsesController < ApplicationController
+ class ReponsesController < ApplicationController
+  def index
+    @reponses = Reponse.all
+
+  end
   def new
     @reponse = Reponse.new
   end

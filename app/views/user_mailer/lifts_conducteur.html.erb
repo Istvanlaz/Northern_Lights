@@ -1,0 +1,16 @@
+<p> Bonjour <%= @passanger.lift.first_name%>, <br>
+
+  Tu as un nouveau passager !<br>
+  Il s'agit de <%= @passanger.first_name%> <%= @passanger.family_name%>.<br>
+  Cette personne a réservé <%= @passanger.places%> pour :
+
+  <% if @passanger.aller && @passanger.retour%>
+  l'aller et le retour.
+  <% elsif @passanger.aller%>
+  uniquement pour l'aller.
+  <%else%>
+  uniquement pour le retour.
+  <%end%>
+
+
+</p>
