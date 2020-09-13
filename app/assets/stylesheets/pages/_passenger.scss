@@ -82,9 +82,8 @@
 
 #checkbox_row {
   display: flex;
-  display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
 }
 
 input[type="checkbox"] {
