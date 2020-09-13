@@ -1,0 +1,17 @@
+<div class="map-cont-small">
+
+  <div class="map-small-bg">
+    <%= cl_image_tag("nrkgbrxhvbqobstcrw64") %>
+  </div>
+
+  <div class="map_placer">
+
+    <div id="map-small"
+         style="width: 90vw; height: 80vh; z-index: 3; border-radius: 5px;"
+         data-markers="<%= @markers.to_json %>"
+         data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
+
+  </div>
+
+</div>
