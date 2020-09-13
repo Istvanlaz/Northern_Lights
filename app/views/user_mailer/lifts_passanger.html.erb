@@ -1,12 +1,22 @@
 <p> Bonjour, <br>
+
   Nous te confirmons la réservation de ton lift avec <%= @passanger.lift.first_name %>.<br>
+
   Tu as réservé <%= @passanger.places%> pour : <br>
 
   <% if @passanger.aller && @passanger.retour%>
-  l'aller et le retour.
+
+    l'aller et le retour.
+
   <% elsif @passanger.aller%>
-  uniquement pour l'aller.
+
+    uniquement pour l'aller.
+
   <%else%>
-  uniquement pour le retour.
+
+    uniquement pour le retour.
+
   <%end%>
+
 </p>
+
