@@ -2,7 +2,8 @@
 
 <div class="lift-cont">
   <div class="lift-bg">
-    <%= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
+    <%= cl_image_tag("nrkgbrxhvbqobstcrw64") %>
+    <%#= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
   </div>
 
   <% if @lifts.count == 0 %>
@@ -11,7 +12,8 @@
         <strong>DÉSOLÉ, NOUS N'AVONS PAS ENCORE DE SUPER-MARIOS DISPONIBLES POUR L'INSTANT..</strong>
       </div>
       <div class="empty_list">
-        <%= image_tag("lifts/super-mario-sans-fond.png", alt: "A sky full of Stars") %>
+        <%= cl_image_tag("ro9i6ihlhxur7avnvajn") %>
+        <%#= image_tag("lifts/super-mario-sans-fond.png", alt: "A sky full of Stars") %>
       </div>
       <div class="bottom-empty-btns">
         <div class="btn-lift-new">
