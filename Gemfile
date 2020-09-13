@@ -10,12 +10,13 @@ gem 'rails', '5.2.3'
 gem 'redis'
 
 gem 'autoprefixer-rails'
+gem 'cloudinary', '~> 1.16.0'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
-gem 'letter_opener', group: :development
+# gem 'letter_opener', group: :development
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
