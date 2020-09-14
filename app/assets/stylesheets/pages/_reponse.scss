@@ -1,11 +1,15 @@
 #reponse-new {
   justify-content: unset;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
 }
 
 #remerciement-new {
   justify-content: unset;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
 }
 
 .form-row {

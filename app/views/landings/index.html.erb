@@ -1,24 +1,19 @@
 <div class="landing-cont">
   <div class="landing-fixed-background">
-    <%#= image_tag("Background_Landing_Northern_Lights.jpg", alt: "Picture of Northern Lights over mountains bordered by water") %>
     <%= cl_image_tag("ba8gmupraokuj40knyst") %>
-      <!-- width: 400, height: 300, crop: :fill) %> -->
   </div>
   <div class="landing-scroll">
     <div class="title-cont">
       <div class="title-ban">
         <%= cl_image_tag("bsbddzrt2ebbtbgqx19e") %>
-        <%#= image_tag("Icon_Front_01.png", alt: "Northern Lights") %>
       </div>
       <div class="next-sign">
         <%= cl_image_tag("uniao8qujoldca1modjl") %>
-        <%#= image_tag("Icon_Front_02.png", alt: "Next Sign") %>
       </div>
     </div>
     <div class="invit-cont">
       <div class="invitation-img">
         <%= cl_image_tag("nrkgbrxhvbqobstcrw64") %>
-        <%#= image_tag("Background_Landing_Stars.jpg", alt: "A sky full of Stars") %>
       </div>
 
       <div class="invit-txt-top-left">
@@ -39,7 +34,6 @@
 
       <div class="invit-logo">
         <%= cl_image_tag("o4tyvisosd6ojygbs4r3") %>
-        <%#= image_tag("Northern_Lights_Logo.png", alt: "White Deer my Dear") %>
       </div>
 
       <div class="invit-name-right">
@@ -85,7 +79,6 @@
       </div>
 
       <div class="localisation-map">
-        <!-- <div id="map" style="height: 34vh; width: 42vw"></div> -->
         <div id="map"
              style="width: 42vw; height: 34vh; border-radius: 5px;"
              data-markers="<%= @markers.to_json %>"

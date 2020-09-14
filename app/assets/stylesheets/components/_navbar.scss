@@ -93,14 +93,17 @@
   .navbar-links {
     position: absolute;
     right: 0px;
-    height: 92vh;
     top: 8vh;
-    background-color: #00020c;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
-    width: 50vw;
+    align-items: center;
+
+    height: 92vh;
+    width: 80vw;
+
+    background-color: #00020c;
     transform: translateX(100vw);
     transition: transform 0.5s ease-in;
   }

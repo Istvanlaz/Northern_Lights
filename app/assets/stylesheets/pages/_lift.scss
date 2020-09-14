@@ -141,6 +141,7 @@
   justify-content: flex-start;
   align-items: center;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .lift_title {
@@ -223,6 +224,7 @@
   border: solid #00020C 0.01em;
   word-break: normal;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 
 }
 
@@ -326,27 +328,41 @@
 
 @media screen and (max-width: 1020px) {
   .lift-cont {
-    height: 100vh;
+    position: relative;
+    top: 8vh;
+    bottom: 90px;
+    // height: 120vh;
+    height: fit-content;
+  }
+
+  .lift-bg {
+    position: absolute;
   }
 
   .lift-bg img {
-    height: 92vh;
+    // height: 112vh;
+    height: fit-content;
   }
 
   .list-cont-empty {
-    position: absolute;
+    position: relative;
     height: 92vh;
   }
 
   .list-cont{
-    overflow-x: scroll;
-    overflow-y: scroll;
-    white-space: nowrap;
+    position: relative;
+    right: 16px;
+
     align-items: unset;
     justify-content: unset;
+
     height: 100vh;
     padding: 32px;
-    right: 16px;
+
+    white-space: nowrap;
+
+    overflow-x: scroll;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     &::-webkit-scrollbar {
       display: none;
@@ -411,6 +427,7 @@
   }
 
   .lift-cont-home {
+    position: relative;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -427,6 +444,10 @@
   }
 
   .lift-subcont {
+    position: relative;
+    padding-bottom: 90px;
+    top: 2vh;
+    height: fit-content;
     flex-direction: column;
     justify-content: center;
   }
@@ -452,10 +473,12 @@
   .bob-new {
     flex-direction: column;
     justify-content: unset;
-    height: 76vh;
+    // height: 76vh;
+    height: fit-content;
     width: 74vw;
     border-radius: 25px;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .bob-new form {
@@ -498,6 +521,11 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .lift-cont {
+    top: 10vh;
+  }
+}
 
 @media screen and (max-width: 450px) {
   .table_cont {

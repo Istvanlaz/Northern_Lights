@@ -1,4 +1,5 @@
 .footer-cont{
+  position: relative;
   z-index: 1000;
 }
 
@@ -12,6 +13,7 @@
   color: rgb(226,226,226);
   text-align: center;
   font-size: 11px;
+  z-index: 1000;
 }
 
 
